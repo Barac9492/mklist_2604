@@ -45,6 +45,12 @@
                         <canvas id="categoryChart"></canvas>
                     </div>
                 </div>
+                <div class="chart-container glass-panel">
+                    <h2>Top 5 지역별 분포 (서울 제외)</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="regionChart"></canvas>
+                    </div>
+                </div>
             </div>
 
             <div class="table-section glass-panel">
@@ -55,10 +61,11 @@
                         <select id="categoryFilter" class="filter-select">
                             <option value="all">전체 섹터</option>
                         </select>
-                        <select id="scoreFilter" class="filter-select">
-                            <option value="all">전체 점수</option>
-                            <option value="35">35점 이상 (투자 매력도 높음)</option>
-                            <option value="30">30점 이상 (관심 기업)</option>
+                        <select id="gradeFilter" class="filter-select">
+                            <option value="all">전체 등급</option>
+                            <option value="S">S등급 (우선 검토, 점수 45+)</option>
+                            <option value="A">A등급 (관심 집중, 점수 35-44)</option>
+                            <option value="B">B등급 (모니터링, 점수 25-34)</option>
                         </select>
                     </div>
                 </div>
@@ -66,6 +73,7 @@
                     <table id="startupsTable">
                         <thead>
                             <tr>
+                                <th data-sort="grade_val" class="sortable">등급 ↕</th>
                                 <th data-sort="score" class="sortable">점수 ↕</th>
                                 <th data-sort="name" class="sortable">상호 ↕</th>
                                 <th data-sort="category" class="sortable">섹터 ↕</th>

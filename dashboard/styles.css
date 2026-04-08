@@ -109,7 +109,7 @@ h1 {
 
 .charts-section {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -249,3 +249,41 @@ tr:hover td {
     font-weight: 600;
     color: var(--text-primary);
 }
+
+.grade-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 14px;
+    min-width: 32px;
+}
+
+.grade-s {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 140, 0, 0.2));
+    color: #ffd700;
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.grade-a {
+    background: rgba(0, 210, 255, 0.15);
+    color: #00d2ff;
+    border: 1px solid rgba(0, 210, 255, 0.4);
+}
+
+.grade-b {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ced4da;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.grade-c {
+    background: rgba(255, 0, 118, 0.1);
+    color: #ff0076;
+    border: 1px solid rgba(255, 0, 118, 0.2);
+}
+

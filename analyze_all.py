@@ -276,6 +276,16 @@ def main():
     export = []
     for period, total, startups, by_cat in all_weeks:
         for s in startups:
+            score = s['score']
+            if score >= 45:
+                grade = 'S'
+            elif score >= 35:
+                grade = 'A'
+            elif score >= 25:
+                grade = 'B'
+            else:
+                grade = 'C'
+                
             export.append({
                 'period': period,
                 'name': s['name'],
@@ -285,7 +295,8 @@ def main():
                 'address': s['address'],
                 'region': s['region'],
                 'category': s['category'],
-                'score': s['score'],
+                'score': score,
+                'investment_grade': grade,
             })
 
     with open('data/startups_all_weeks.json', 'w', encoding='utf-8') as f:

@@ -181,6 +181,55 @@ function renderCharts() {
             cutout: '75%'
         }
     });
+
+    // 3. Region Horizontal Bar Chart (Top 5 excluding Seoul)
+    const regionMap = {};
+    allData.forEach(item => {
+        if(item.region && item.region !== '서울' && item.region !== '') {
+            regionMap[item.region] = (regionMap[item.region] || 0) + 1;
+        }
+    });
+    
+    const regLabels = Object.keys(regionMap).sort((a,b) => regionMap[b] - regionMap[a]).slice(0, 5);
+    const regData = regLabels.map(l => regionMap[l]);
+    
+    const ctxReg = document.getElementById('regionChart').getContext('2d');
+    new Chart(ctxReg, {
+        type: 'bar',
+        data: {
+            labels: regLabels,
+            datasets: [{
+                data: regData,
+                backgroundColor: 'rgba(58, 134, 255, 0.6)',
+                borderColor: '#3a86ff',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            indexAxis: 'y', // makes it horizontal
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: 'rgba(25, 28, 41, 0.9)',
+                    borderColor: 'rgba(255,255,255,0.1)',
+                    borderWidth: 1,
+                    padding: 12
+                }
+            },
+            scales: {
+                x: { 
+                    beginAtZero: true, 
+                    grid: { color: 'rgba(255,255,255,0.05)' } 
+                },
+                y: { 
+                    grid: { display: false } 
+                }
+            }
+        }
+    });
 }
 
 function populateCategoryFilter() {
@@ -211,7 +260,10 @@ function renderTable() {
         const scoreClass = isHigh ? 'score-high' : 'score-med';
         const capDisplay = item.capital_million_krw ? `${item.capital_million_krw.toLocaleString()}M` : '-';
         
+        const gradeBadge = `<span class="grade-badge grade-${item.investment_grade ? item.investment_grade.toLowerCase() : 'c'}">${item.investment_grade || 'C'}</span>`;
+        
         tr.innerHTML = `
+            <td>${gradeBadge}</td>
             <td><span class="badge-score ${scoreClass}">${item.score}</span></td>
             <td><span class="rank-biz-name">${item.name}</span></td>
             <td><span class="tag-category">${item.category || '-'}</span></td>
@@ -226,14 +278,14 @@ function renderTable() {
 function applyFilters() {
     const searchStr = document.getElementById('searchInput').value.toLowerCase();
     const catVal = document.getElementById('categoryFilter').value;
-    const scoreVal = document.getElementById('scoreFilter').value;
+    const gradeVal = document.getElementById('gradeFilter') ? document.getElementById('gradeFilter').value : 'all';
     
     filteredData = allData.filter(item => {
         const matchSearch = item.name.toLowerCase().includes(searchStr) || item.business.toLowerCase().includes(searchStr);
         const matchCat = (catVal === 'all') || (item.category === catVal);
-        const matchScore = (scoreVal === 'all') || (item.score >= parseInt(scoreVal));
+        const matchGrade = (gradeVal === 'all') || (item.investment_grade === gradeVal);
         
-        return matchSearch && matchCat && matchScore;
+        return matchSearch && matchCat && matchGrade;
     });
     
     sortData();
@@ -245,6 +297,11 @@ function sortData() {
     filteredData.sort((a, b) => {
         let valA = a[column];
         let valB = b[column];
+
+        if (column === 'grade_val') {
+            valA = a.score;
+            valB = b.score;
+        }
         
         if (typeof valA === 'string') valA = valA.toLowerCase();
         if (typeof valB === 'string') valB = valB.toLowerCase();
@@ -266,7 +323,7 @@ function sortData() {
 function setupEventListeners() {
     document.getElementById('searchInput').addEventListener('input', applyFilters);
     document.getElementById('categoryFilter').addEventListener('change', applyFilters);
-    document.getElementById('scoreFilter').addEventListener('change', applyFilters);
+    if(document.getElementById('gradeFilter')) document.getElementById('gradeFilter').addEventListener('change', applyFilters);
     
     document.querySelectorAll('.sortable').forEach(th => {
         th.addEventListener('click', () => {
