@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Scanner Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="glass-panel">
+            <div class="header-content">
+                <h1>MK신설법인 스캐너</h1>
+                <p>주간 스타트업 후보 동향 (점수 25+)</p>
+            </div>
+            <div class="metrics-row" id="kpi-container">
+                <div class="metric-card">
+                    <h3>총 후보기업수</h3>
+                    <div class="value" id="kpi-total">-</div>
+                </div>
+                <div class="metric-card">
+                    <h3>가장 많은 섹터 (1위)</h3>
+                    <div class="value" id="kpi-top-category">-</div>
+                </div>
+                <div class="metric-card">
+                    <h3>조사기간 (주)</h3>
+                    <div class="value" id="kpi-weeks-count">-</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="charts-section">
+                <div class="chart-container glass-panel">
+                    <h2>주차별 스캐닝 동향</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container glass-panel">
+                    <h2>섹터별 비중 (Top 5)</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-section glass-panel">
+                <div class="table-header">
+                    <h2>스타트업 디스커버리</h2>
+                    <div class="table-controls">
+                        <input type="text" id="searchInput" placeholder="상호나 주요사업으로 검색..." class="search-input">
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all">전체 섹터</option>
+                        </select>
+                        <select id="scoreFilter" class="filter-select">
+                            <option value="all">전체 점수</option>
+                            <option value="35">35점 이상 (투자 매력도 높음)</option>
+                            <option value="30">30점 이상 (관심 기업)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table id="startupsTable">
+                        <thead>
+                            <tr>
+                                <th data-sort="score" class="sortable">점수 ↕</th>
+                                <th data-sort="name" class="sortable">상호 ↕</th>
+                                <th data-sort="category" class="sortable">섹터 ↕</th>
+                                <th data-sort="capital_million_krw" class="sortable">자본규모 ↕</th>
+                                <th>주요사업</th>
+                                <th>주차</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chart.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
