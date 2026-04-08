@@ -130,6 +130,30 @@ def categorize(biz):
         return 'Other'
 
 
+def detect_talent_signals(company, base_score):
+    biz = company['business'].lower()
+    address = company['address'].lower()
+    capital = company['capital']
+    
+    signals = []
+    
+    # 1. Campus / Tech Hub
+    hub_keywords = ['대학교', '산학협력단', '카이스트', 'kaist', '포스텍', '포항공대', 'unist', 'dgist', '팁스타운', '판교테크노밸리', '마루180', '마루360', '마곡', '홍릉', '연구소기업', '사내벤처', '기술지주']
+    if any(k in address or k in biz for k in hub_keywords):
+        signals.append('캠퍼스/연구소/테크허브')
+        
+    # 2. Deep-Tech / Over-Engineered Purpose
+    deeptech_keywords = ['sllm', 'rag', '트랜스포머', '펩타이드', '재조합', '엑소좀', 'npu', '화합물 반도체', '양자컴퓨팅']
+    if any(k in biz for k in deeptech_keywords):
+        signals.append('딥테크 고도기술')
+        
+    # 3. Institutional Day-1 Seed
+    if capital >= 100 and base_score >= 30:
+        signals.append('Day-1 기관투자 가능성(고도자본)')
+        
+    return signals
+
+
 def score_startup(company):
     biz = company['business']
     name = company['name']
@@ -137,7 +161,7 @@ def score_startup(company):
     score = 0
 
     if is_excluded(biz):
-        return 0, '', []
+        return 0, '', [], []
 
     t1_matches = [kw for kw in TIER1_KEYWORDS if kw.lower() in biz.lower() or kw.lower() in name.lower()]
     if t1_matches:
@@ -146,7 +170,7 @@ def score_startup(company):
             score += len(t1_matches) * 5
 
     if not t1_matches:
-        return 0, '', []  # Only Tier1
+        return 0, '', [], []  # Only Tier1
 
     if 50 <= capital <= 3000:
         score += 10
@@ -164,8 +188,12 @@ def score_startup(company):
     if company['sector'] in ['건설', '건자재']:
         score -= 15
 
+    signals = detect_talent_signals(company, score)
+    if signals:
+        score += 5
+
     cat = categorize(biz)
-    return max(0, score), cat, t1_matches[:3]
+    return max(0, score), cat, t1_matches[:3], signals
 
 
 def main():
@@ -199,10 +227,11 @@ def main():
         companies = parse_xls(filepath)
         startups = []
         for c in companies:
-            score, cat, kws = score_startup(c)
+            score, cat, kws, signals = score_startup(c)
             if score >= 25:
                 c['score'] = score
                 c['category'] = cat
+                c['talent_signals'] = signals
                 startups.append(c)
 
         by_cat = defaultdict(list)
@@ -297,6 +326,7 @@ def main():
                 'category': s['category'],
                 'score': score,
                 'investment_grade': grade,
+                'talent_signals': s.get('talent_signals', []),
             })
 
     with open('data/startups_all_weeks.json', 'w', encoding='utf-8') as f:

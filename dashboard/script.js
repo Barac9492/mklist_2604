@@ -262,10 +262,21 @@ function renderTable() {
         
         const gradeBadge = `<span class="grade-badge grade-${item.investment_grade ? item.investment_grade.toLowerCase() : 'c'}">${item.investment_grade || 'C'}</span>`;
         
+        let eliteBadge = '';
+        if (item.talent_signals && item.talent_signals.length > 0) {
+            const tooltipText = "사유: " + item.talent_signals.join(", ");
+            eliteBadge = `<span class="badge-elite" title="${tooltipText}">🎖️ Elite</span>`;
+        }
+        
         tr.innerHTML = `
             <td>${gradeBadge}</td>
             <td><span class="badge-score ${scoreClass}">${item.score}</span></td>
-            <td><span class="rank-biz-name">${item.name}</span></td>
+            <td>
+                <div class="name-wrapper">
+                    <span class="rank-biz-name">${item.name}</span>
+                    ${eliteBadge}
+                </div>
+            </td>
             <td><span class="tag-category">${item.category || '-'}</span></td>
             <td style="color:#adb5bd">${capDisplay}</td>
             <td><span class="biz-desc" title="${item.business}">${item.business}</span></td>
