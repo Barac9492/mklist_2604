@@ -284,7 +284,7 @@ function renderTable() {
             <td><span class="badge-score ${scoreClass}">${item.score}</span></td>
             <td>
                 <div class="name-wrapper">
-                    <span class="rank-biz-name">${item.name}</span>
+                    <a href="https://www.google.com/search?q=${encodeURIComponent(item.name + ' 스타트업 홈페이지')}" target="_blank" class="rank-biz-name" title="Google 웹사이트 검색">${item.name}</a>
                     ${eliteBadge}
                     ${intelLinks}
                 </div>

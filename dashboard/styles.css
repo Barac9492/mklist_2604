@@ -251,7 +251,14 @@ tr:hover td {
 
 .rank-biz-name {
     font-weight: 600;
+    font-size: 14px;
     color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a.rank-biz-name:hover {
+    color: #00d2ff;
+    text-decoration: underline;
 }
 
 .grade-badge {
