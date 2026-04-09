@@ -319,6 +319,20 @@ a.rank-biz-name:hover {
     white-space: nowrap;
 }
 
+.tag-ai {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, rgba(131, 56, 236, 0.2), rgba(255, 0, 110, 0.2));
+    border: 1px solid rgba(131, 56, 236, 0.3);
+    color: #f1a5ff;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
 /* CRM Buttons & Table Actions */
 .table-actions {
     display: flex;

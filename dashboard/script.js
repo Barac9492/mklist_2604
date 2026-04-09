@@ -278,6 +278,11 @@ function renderTable() {
             <a href="https://search.naver.com/search.naver?query=${encodeURIComponent(item.name + ' 스타트업')}" target="_blank" class="intel-btn nv" title="Naver 검색">N</a>
         </span>`;
         
+        let aiTag = '';
+        if (item.llm_tag) {
+            aiTag = `<br><span class="tag-ai" title="OpenAI 자동 분류">✨ ${item.llm_tag}</span>`;
+        }
+        
         tr.innerHTML = `
             <td>${starBtn}</td>
             <td>${gradeBadge}</td>
@@ -289,7 +294,7 @@ function renderTable() {
                     ${intelLinks}
                 </div>
             </td>
-            <td><span class="tag-category">${item.category || '-'}</span></td>
+            <td><span class="tag-category">${item.category || '-'}</span>${aiTag}</td>
             <td style="color:#adb5bd">${capDisplay}</td>
             <td><span class="biz-desc" title="${item.business}">${item.business}</span></td>
             <td style="color:#adb5bd;font-size:13px;">${item.period}</td>

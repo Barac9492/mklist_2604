@@ -4,7 +4,48 @@
 import xlrd
 import re
 import json
+import os
 from collections import defaultdict
+
+CACHE_FILE = 'data/llm_cache.json'
+try:
+    with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+        llm_cache = json.load(f)
+except FileNotFoundError:
+    llm_cache = {}
+
+is_openai_ready = False
+if os.environ.get("OPENAI_API_KEY"):
+    try:
+        from openai import OpenAI
+        client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+        is_openai_ready = True
+    except ImportError:
+        pass
+
+def get_llm_tag(business_desc):
+    if not is_openai_ready:
+        return None
+    if business_desc in llm_cache:
+        return llm_cache[business_desc]
+        
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a tech VC analyst. Read the Korean business description and respond with EXACTLY ONE short English tech keyword or phrase (max 20 characters, e.g. 'B2B SaaS', 'EdTech', 'Vision AI', 'Robotics', 'Digital Twin') that best categorizes their core model. Output only the English keyword, nothing else."},
+                {"role": "user", "content": f"Description: {business_desc}"}
+            ],
+            temperature=0.1,
+            max_tokens=10
+        )
+        tag = response.choices[0].message.content.strip()
+        tag = tag.replace('"', '').replace("'", "")
+        llm_cache[business_desc] = tag
+        return tag
+    except Exception as e:
+        print(f"  [!] OpenAI API error: {e}")
+        return None
 
 # ── Import parse + score logic from filter_v2 ──
 
@@ -232,6 +273,10 @@ def main():
                 c['score'] = score
                 c['category'] = cat
                 c['talent_signals'] = signals
+                if score >= 35:
+                    c['llm_tag'] = get_llm_tag(c['business'])
+                else:
+                    c['llm_tag'] = None
                 startups.append(c)
 
         by_cat = defaultdict(list)
@@ -327,11 +372,16 @@ def main():
                 'score': score,
                 'investment_grade': grade,
                 'talent_signals': s.get('talent_signals', []),
+                'llm_tag': s.get('llm_tag', None)
             })
 
     with open('data/startups_all_weeks.json', 'w', encoding='utf-8') as f:
         json.dump(export, f, ensure_ascii=False, indent=2)
     print(f"\n\n  ✓ JSON 내보내기 완료: data/startups_all_weeks.json ({len(export)}개 항목)")
+    
+    # Save cache
+    with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(llm_cache, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == '__main__':
