@@ -53,9 +53,22 @@
                 </div>
             </div>
 
+            <div class="heatmap-section glass-panel">
+                <h2>📈 Trending Deep-Tech Keywords</h2>
+                <div id="heatmapContainer" class="heatmap-container">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
             <div class="table-section glass-panel">
                 <div class="table-header">
                     <h2>스타트업 디스커버리</h2>
+                    <div class="table-actions">
+                        <button id="toggleWatchlistBtn" class="btn-outline"><span>⭐</span> My Watchlist</button>
+                        <button id="exportCsvBtn" class="btn-outline"><span>📥</span> CSV 내보내기</button>
+                    </div>
+                </div>
+                <div class="table-filters-row">
                     <div class="table-controls">
                         <input type="text" id="searchInput" placeholder="상호나 주요사업으로 검색..." class="search-input">
                         <select id="categoryFilter" class="filter-select">
@@ -73,6 +86,7 @@
                     <table id="startupsTable">
                         <thead>
                             <tr>
+                                <th class="col-star">★</th>
                                 <th data-sort="grade_val" class="sortable">등급 ↕</th>
                                 <th data-sort="score" class="sortable">점수 ↕</th>
                                 <th data-sort="name" class="sortable">상호 ↕</th>

@@ -1,6 +1,8 @@
 let allData = [];
 let filteredData = [];
 let currentSort = { column: 'score', asc: false };
+let watchlist = JSON.parse(localStorage.getItem('mk_watchlist') || '[]');
+let isWatchlistView = false;
 
 // Load data
 async function loadData() {
@@ -26,7 +28,7 @@ function initDashboard() {
     updateKPIs();
     renderCharts();
     populateCategoryFilter();
-    renderTable();
+    applyFilters(); // This will trigger sort, heatmap, and renderTable
     setupEventListeners();
 }
 
@@ -267,14 +269,24 @@ function renderTable() {
             const tooltipText = "사유: " + item.talent_signals.join(", ");
             eliteBadge = `<span class="badge-elite" title="${tooltipText}">🎖️ Elite</span>`;
         }
+
+        const isStarred = watchlist.includes(item.name);
+        const starBtn = `<button class="star-btn ${isStarred ? 'active' : ''}" onclick="toggleWatchlistItem('${item.name.replace(/'/g, "\\'")}')">${isStarred ? '★' : '☆'}</button>`;
+        
+        const intelLinks = `<span class="intel-links">
+            <a href="https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(item.name + ' ' + (item.ceo || ''))}" target="_blank" class="intel-btn li" title="LinkedIn 검색">in</a>
+            <a href="https://search.naver.com/search.naver?query=${encodeURIComponent(item.name + ' 스타트업')}" target="_blank" class="intel-btn nv" title="Naver 검색">N</a>
+        </span>`;
         
         tr.innerHTML = `
+            <td>${starBtn}</td>
             <td>${gradeBadge}</td>
             <td><span class="badge-score ${scoreClass}">${item.score}</span></td>
             <td>
                 <div class="name-wrapper">
                     <span class="rank-biz-name">${item.name}</span>
                     ${eliteBadge}
+                    ${intelLinks}
                 </div>
             </td>
             <td><span class="tag-category">${item.category || '-'}</span></td>
@@ -295,11 +307,13 @@ function applyFilters() {
         const matchSearch = item.name.toLowerCase().includes(searchStr) || item.business.toLowerCase().includes(searchStr);
         const matchCat = (catVal === 'all') || (item.category === catVal);
         const matchGrade = (gradeVal === 'all') || (item.investment_grade === gradeVal);
+        const matchWatchlist = isWatchlistView ? watchlist.includes(item.name) : true;
         
-        return matchSearch && matchCat && matchGrade;
+        return matchSearch && matchCat && matchGrade && matchWatchlist;
     });
     
     sortData();
+    renderHeatmap();
 }
 
 function sortData() {
@@ -331,10 +345,93 @@ function sortData() {
     renderTable();
 }
 
+// CRM Logic Functions
+function toggleWatchlistItem(name) {
+    if (watchlist.includes(name)) {
+        watchlist = watchlist.filter(n => n !== name);
+    } else {
+        watchlist.push(name);
+    }
+    localStorage.setItem('mk_watchlist', JSON.stringify(watchlist));
+    
+    if (isWatchlistView) {
+        applyFilters(); 
+    } else {
+        renderTable(); 
+    }
+}
+
+function exportToCSV() {
+    if (filteredData.length === 0) return alert("데이터가 없습니다.");
+    
+    const headers = ["Grade", "Score", "Name", "Category", "Capital(M)", "CEO", "Business", "Region", "Period", "TalentSignals"];
+    const rows = filteredData.map(item => [
+        item.investment_grade || 'C',
+        item.score,
+        `"${item.name.replace(/"/g, '""')}"`,
+        item.category,
+        item.capital_million_krw || 0,
+        `"${(item.ceo || '').replace(/"/g, '""')}"`,
+        `"${item.business.replace(/"/g, '""')}"`,
+        item.region,
+        item.period,
+        `"${(item.talent_signals || []).join(", ").replace(/"/g, '""')}"`
+    ]);
+    
+    const csvContent = [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+    const blob = new Blob(["\uFEFF"+csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `MK_Scanner_Export_${new Date().toISOString().slice(0,10)}.csv`;
+    link.click();
+}
+
+function renderHeatmap() {
+    const container = document.getElementById('heatmapContainer');
+    if (!container) return;
+    
+    const ignoreWords = ['및', '개발', '공급', '제조', '판매', '기반', '소프트웨어', '시스템', '서비스', '서비스업', '개발업', '공급업', '제공업', '제조업', '도소매업', '관련', '솔루션', '컨설팅업', '플랫폼', '운영업', '전문'];
+    const wordCounts = {};
+    
+    filteredData.forEach(item => {
+        const words = item.business.split(/[\s,()/\·]+/);
+        words.forEach(w => {
+            if (w.length > 1 && !ignoreWords.includes(w)) {
+                wordCounts[w] = (wordCounts[w] || 0) + 1;
+            }
+        });
+    });
+    
+    const sortedWords = Object.keys(wordCounts).map(w => ({word: w, count: wordCounts[w]}))
+        .sort((a, b) => b.count - a.count).slice(0, 15);
+    
+    container.innerHTML = '';
+    sortedWords.forEach((item, index) => {
+        let level = 0;
+        if (index < 3) level = 3;
+        else if (index < 7) level = 2;
+        else if (index < 12) level = 1;
+        
+        const tag = document.createElement('span');
+        tag.className = `heatmap-tag heat-level-${level}`;
+        tag.textContent = `${item.word} (${item.count})`;
+        container.appendChild(tag);
+    });
+}
+
 function setupEventListeners() {
     document.getElementById('searchInput').addEventListener('input', applyFilters);
     document.getElementById('categoryFilter').addEventListener('change', applyFilters);
     if(document.getElementById('gradeFilter')) document.getElementById('gradeFilter').addEventListener('change', applyFilters);
+    
+    document.getElementById('toggleWatchlistBtn')?.addEventListener('click', (e) => {
+        isWatchlistView = !isWatchlistView;
+        e.currentTarget.classList.toggle('active', isWatchlistView);
+        applyFilters();
+    });
+    
+    document.getElementById('exportCsvBtn')?.addEventListener('click', exportToCSV);
     
     document.querySelectorAll('.sortable').forEach(th => {
         th.addEventListener('click', () => {
