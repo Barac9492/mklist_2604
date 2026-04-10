@@ -22,11 +22,15 @@
                 </div>
                 <div class="metric-card">
                     <h3>가장 많은 섹터 (1위)</h3>
-                    <div class="value" id="kpi-top-category">-</div>
+                    <div class="value" id="kpi-top-category" style="font-size:20px;">-</div>
                 </div>
                 <div class="metric-card">
                     <h3>조사기간 (주)</h3>
                     <div class="value" id="kpi-weeks-count">-</div>
+                </div>
+                <div class="metric-card" style="border-color: rgba(0,210,255,0.3); background: rgba(0,210,255,0.05);">
+                    <h3 style="color: #00d2ff;">📅 최신 데이터 기간</h3>
+                    <div class="value" id="kpi-latest-period" style="font-size:16px; color:#00d2ff;">-</div>
                 </div>
             </div>
         </header>
@@ -92,6 +96,12 @@
                             <option value="S">S등급 (우선 검토, 점수 45+)</option>
                             <option value="A">A등급 (관심 집중, 점수 35-44)</option>
                             <option value="B">B등급 (모니터링, 점수 25-34)</option>
+                        </select>
+                        <select id="regionFilter" class="filter-select">
+                            <option value="all">전체 지역</option>
+                        </select>
+                        <select id="periodFilter" class="filter-select">
+                            <option value="all">전체 기간</option>
                         </select>
                     </div>
                 </div>

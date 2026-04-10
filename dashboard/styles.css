@@ -56,6 +56,7 @@ h1 {
     font-weight: 700;
     background: linear-gradient(90deg, #00d2ff 0%, #3a86ff 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 4px;
 }
@@ -429,3 +430,28 @@ a.rank-biz-name:hover {
 .heat-level-2 { background: rgba(58, 134, 255, 0.6); color: #fff; }
 .heat-level-3 { background: #3a86ff; color: #fff; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 0 10px rgba(58, 134, 255, 0.4); }
 
+/* OSINT Intel Tag */
+.tag-osint {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, rgba(0, 200, 120, 0.15), rgba(0, 210, 255, 0.1));
+    border: 1px solid rgba(0, 200, 120, 0.3);
+    color: #57e89a;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 4px;
+    cursor: help;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 240px;
+    transition: all 0.2s;
+}
+.tag-osint:hover {
+    background: linear-gradient(135deg, rgba(0, 200, 120, 0.3), rgba(0, 210, 255, 0.2));
+    border-color: rgba(0, 200, 120, 0.6);
+    box-shadow: 0 0 8px rgba(0, 200, 120, 0.2);
+}

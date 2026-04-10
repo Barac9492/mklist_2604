@@ -5,6 +5,9 @@ import xlrd
 import re
 import json
 import os
+import urllib.request
+import urllib.parse
+import html as html_lib
 from collections import defaultdict
 
 CACHE_FILE = 'data/llm_cache.json'
@@ -88,6 +91,51 @@ def get_lp_teaser(name, business_desc, llm_tag):
         return draft
     except Exception as e:
         return None
+
+
+def get_naver_osint_snippet(company_name, ceo_name=''):
+    """Fetch intelligence about a startup via DuckDuckGo Instant Answer API (no key needed)."""
+    cache_key = f"naver_{company_name}"
+    if cache_key in llm_cache:
+        return llm_cache[cache_key]
+    
+    try:
+        # DuckDuckGo Instant Answer API - free, no auth required
+        query = urllib.parse.quote(f"{company_name} {ceo_name} 스타트업")
+        url = f"https://api.duckduckgo.com/?q={query}&format=json&no_html=1&skip_disambig=1"
+        headers = {
+            'User-Agent': 'MKScanner/1.0 (startup intelligence research tool)',
+            'Accept': 'application/json',
+        }
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+        
+        snippets = []
+        
+        # Main abstract (Wikipedia / official source)
+        if data.get('Abstract') and len(data['Abstract']) > 20:
+            snippets.append(f"[요약] {data['Abstract'][:120]}")
+        
+        # Answer (instant answer box)
+        if data.get('Answer') and len(data['Answer']) > 10:
+            snippets.append(f"[정보] {data['Answer'][:100]}")
+        
+        # Related topics that mention the company
+        for topic in data.get('RelatedTopics', [])[:3]:
+            text = topic.get('Text', '') if isinstance(topic, dict) else ''
+            if text and (company_name in text or ceo_name in text) and len(text) > 15:
+                snippets.append(f"[관련] {text[:100]}")
+                break
+        
+        result = ' | '.join(snippets) if snippets else None
+        llm_cache[cache_key] = result
+        return result
+    except Exception as e:
+        # DuckDuckGo failed — silently skip, not worth retrying
+        llm_cache[cache_key] = None  # Cache miss to avoid retrying
+        return None
+
 
 # ── Import parse + score logic from filter_v2 ──
 
@@ -330,12 +378,25 @@ def main():
                 c['talent_signals'] = signals
                 if score >= 35:
                     c['llm_tag'] = get_llm_tag(c['business'])
+                    # Enrich with OSINT (Naver scrape) for all A/S targets
+                    osint = get_naver_osint_snippet(c['name'], c.get('ceo', ''))
+                    c['osint_snippet'] = osint
+                    if osint:
+                        print(f"  [OSINT] ✓ {c['name']}: {osint[:60]}...")
                     # Generate Outreach Draft for elite prospects
                     if score >= 40:
-                        c['outreach_draft'] = get_outreach_draft(c['name'], c['business'], c['llm_tag'])
-                        c['lp_teaser'] = get_lp_teaser(c['name'], c['business'], c['llm_tag'])
+                        # Pass enriched context to GPT for better draft
+                        enriched_biz = c['business']
+                        if osint:
+                            enriched_biz += f" [외부 정보: {osint[:120]}]"
+                        c['outreach_draft'] = get_outreach_draft(c['name'], enriched_biz, c['llm_tag'])
+                        c['lp_teaser'] = get_lp_teaser(c['name'], enriched_biz, c['llm_tag'])
+                    else:
+                        c['outreach_draft'] = None
+                        c['lp_teaser'] = None
                 else:
                     c['llm_tag'] = None
+                    c['osint_snippet'] = None
                     c['outreach_draft'] = None
                     c['lp_teaser'] = None
                 startups.append(c)
@@ -434,6 +495,7 @@ def main():
                 'investment_grade': grade,
                 'talent_signals': s.get('talent_signals', []),
                 'llm_tag': s.get('llm_tag', None),
+                'osint_snippet': s.get('osint_snippet', None),
                 'outreach_draft': s.get('outreach_draft', None),
                 'lp_teaser': s.get('lp_teaser', None)
             })

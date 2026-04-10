@@ -44,6 +44,13 @@ function initDashboard() {
     setupEventListeners();
 }
 
+/* Helper: convert period string "M/D~M/D" to a sortable number */
+function periodToNum(p) {
+    // Extract start month/day from "M/D~M/D" format
+    const m = p.match(/^(\d{1,2})\/(\d{1,2})/);
+    return m ? parseInt(m[1]) * 100 + parseInt(m[2]) : 0;
+}
+
 function updateKPIs() {
     // Animate numbers up for premium feel
     animateValue('kpi-total', 0, allData.length, 1000);
@@ -61,6 +68,13 @@ function updateKPIs() {
     // Weeks count
     const weeks = new Set(allData.map(item => item.period));
     animateValue('kpi-weeks-count', 0, weeks.size, 500);
+    
+    // Find and display latest period
+    const sortedPeriods = [...weeks].sort((a, b) => periodToNum(b) - periodToNum(a));
+    const latestPeriod = sortedPeriods[0];
+    const latestCount = allData.filter(d => d.period === latestPeriod).length;
+    const latestEl = document.getElementById('kpi-latest-period');
+    if (latestEl) latestEl.textContent = `${latestPeriod} (${latestCount}개)`;
 }
 
 function animateValue(id, start, end, duration) {
@@ -249,13 +263,36 @@ function renderCharts() {
 function populateCategoryFilter() {
     const selector = document.getElementById('categoryFilter');
     const categories = [...new Set(allData.map(i => i.category))].filter(Boolean).sort();
-    
     categories.forEach(cat => {
         const opt = document.createElement('option');
         opt.value = cat;
         opt.textContent = cat;
         selector.appendChild(opt);
     });
+    
+    // Populate region filter
+    const regionSel = document.getElementById('regionFilter');
+    if (regionSel) {
+        const regions = [...new Set(allData.map(i => i.region))].filter(Boolean).sort();
+        regions.forEach(r => {
+            const opt = document.createElement('option');
+            opt.value = r;
+            opt.textContent = r;
+            regionSel.appendChild(opt);
+        });
+    }
+    
+    // Populate period filter (sorted correctly)
+    const periodSel = document.getElementById('periodFilter');
+    if (periodSel) {
+        const periods = [...new Set(allData.map(i => i.period))].sort((a, b) => periodToNum(b) - periodToNum(a));
+        periods.forEach(p => {
+            const opt = document.createElement('option');
+            opt.value = p;
+            opt.textContent = p;
+            periodSel.appendChild(opt);
+        });
+    }
 }
 
 function renderTable() {
@@ -263,9 +300,13 @@ function renderTable() {
     tbody.innerHTML = '';
     
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:30px; color:#adb5bd;">검색 결과가 없습니다.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:30px; color:#adb5bd;">검색 결과가 없습니다.</td></tr>';
         return;
     }
+    
+    // Determine latest period for "NEW" badge
+    const allPeriods = [...new Set(allData.map(d => d.period))].sort((a, b) => periodToNum(b) - periodToNum(a));
+    const latestPeriod = allPeriods[0];
     
     filteredData.forEach(item => {
         const tr = document.createElement('tr');
@@ -275,6 +316,10 @@ function renderTable() {
         const capDisplay = item.capital_million_krw ? `${item.capital_million_krw.toLocaleString()}M` : '-';
         
         const gradeBadge = `<span class="grade-badge grade-${item.investment_grade ? item.investment_grade.toLowerCase() : 'c'}">${item.investment_grade || 'C'}</span>`;
+        
+        // NEW badge for the most recent week
+        const isNew = item.period === latestPeriod;
+        const newBadge = isNew ? `<span style="background:linear-gradient(135deg,#00d2ff,#3a86ff); color:#fff; font-size:9px; font-weight:800; padding:2px 5px; border-radius:3px; margin-left:6px; vertical-align:middle; letter-spacing:0.5px;">NEW</span>` : '';
         
         let eliteBadge = '';
         if (item.talent_signals && item.talent_signals.length > 0) {
@@ -318,6 +363,12 @@ function renderTable() {
             aiTag = `<br><span class="tag-ai" title="OpenAI 자동 분류">✨ ${item.llm_tag}</span>`;
         }
         
+        let osintTag = '';
+        if (item.osint_snippet) {
+            const safeSnippet = item.osint_snippet.replace(/"/g, '&quot;');
+            osintTag = `<br><span class="tag-osint" title="${safeSnippet}">🔎 Intel: ${item.osint_snippet.substring(0, 55)}...</span>`;
+        }
+        
         tr.innerHTML = `
             <td>${starBtn}</td>
             <td>${gradeBadge}</td>
@@ -325,12 +376,13 @@ function renderTable() {
             <td>
                 <div class="name-wrapper">
                     <a href="https://www.google.com/search?q=${encodeURIComponent(item.name + ' 스타트업 홈페이지')}" target="_blank" class="rank-biz-name" title="Google 웹사이트 검색">${item.name}</a>
+                    ${newBadge}
                     ${eliteBadge}
                     ${intelLinks}
                 </div>
                 ${crmControls}
             </td>
-            <td><span class="tag-category">${item.category || '-'}</span>${aiTag}</td>
+            <td><span class="tag-category">${item.category || '-'}</span>${aiTag}${osintTag}</td>
             <td style="color:#adb5bd">${capDisplay}</td>
             <td><span class="biz-desc" title="${item.business}">${item.business}</span></td>
             <td style="color:#adb5bd;font-size:13px;">${item.period}</td>
@@ -343,14 +395,18 @@ function applyFilters() {
     const searchStr = document.getElementById('searchInput').value.toLowerCase();
     const catVal = document.getElementById('categoryFilter').value;
     const gradeVal = document.getElementById('gradeFilter') ? document.getElementById('gradeFilter').value : 'all';
+    const regionVal = document.getElementById('regionFilter') ? document.getElementById('regionFilter').value : 'all';
+    const periodVal = document.getElementById('periodFilter') ? document.getElementById('periodFilter').value : 'all';
     
     filteredData = allData.filter(item => {
-        const matchSearch = item.name.toLowerCase().includes(searchStr) || item.business.toLowerCase().includes(searchStr);
+        const matchSearch = item.name.toLowerCase().includes(searchStr) || item.business.toLowerCase().includes(searchStr) || (item.ceo || '').toLowerCase().includes(searchStr);
         const matchCat = (catVal === 'all') || (item.category === catVal);
         const matchGrade = (gradeVal === 'all') || (item.investment_grade === gradeVal);
+        const matchRegion = (regionVal === 'all') || (item.region === regionVal);
+        const matchPeriod = (periodVal === 'all') || (item.period === periodVal);
         const matchWatchlist = isWatchlistView ? (item.name in watchlist) : true;
         
-        return matchSearch && matchCat && matchGrade && matchWatchlist;
+        return matchSearch && matchCat && matchGrade && matchRegion && matchPeriod && matchWatchlist;
     });
     
     sortData();
@@ -424,7 +480,7 @@ function editWatchlistNote(name) {
 function generateWeeklyMemo() {
     if (allData.length === 0) return alert("데이터가 없습니다.");
     // Find the latest period string by sorting descending and picking the first
-    const periods = [...new Set(allData.map(d => d.period))].sort((a,b) => b.localeCompare(a));
+    const periods = [...new Set(allData.map(d => d.period))].sort((a,b) => periodToNum(b) - periodToNum(a));
     const latestPeriod = periods[0];
     
     const topPicks = allData.filter(d => d.period === latestPeriod && d.score >= 35).sort((a,b) => b.score - a.score);
@@ -455,12 +511,6 @@ function generateWeeklyMemo() {
     }).catch(err => {
         alert("클립보드 복사에 실패했습니다. 아래 텍스트를 복사하세요:\n\n" + memo);
     });
-}
-
-function showEmailDraft(encodedDraft) {
-    const draft = decodeURIComponent(encodedDraft);
-    document.getElementById('emailDraftContent').value = draft;
-    document.getElementById('emailModal').style.display = 'flex';
 }
 
 function showEmailDraft(encodedDraft) {
@@ -573,7 +623,7 @@ function renderMomentum() {
     const momentumContainer = document.getElementById('momentumContent');
     if (!momentumContainer || allData.length === 0) return;
 
-    const periods = [...new Set(allData.map(d => d.period))].sort((a,b) => b.localeCompare(a));
+    const periods = [...new Set(allData.map(d => d.period))].sort((a,b) => periodToNum(b) - periodToNum(a));
     if (periods.length < 2) {
         momentumContainer.innerHTML = "데이터가 부족하여 주간 비교를 수행할 수 없습니다.";
         return;
@@ -632,6 +682,8 @@ function setupEventListeners() {
     document.getElementById('searchInput').addEventListener('input', applyFilters);
     document.getElementById('categoryFilter').addEventListener('change', applyFilters);
     if(document.getElementById('gradeFilter')) document.getElementById('gradeFilter').addEventListener('change', applyFilters);
+    if(document.getElementById('regionFilter')) document.getElementById('regionFilter').addEventListener('change', applyFilters);
+    if(document.getElementById('periodFilter')) document.getElementById('periodFilter').addEventListener('change', applyFilters);
     
     document.getElementById('toggleWatchlistBtn')?.addEventListener('click', (e) => {
         isWatchlistView = !isWatchlistView;
@@ -672,6 +724,142 @@ function setupEventListeners() {
         initialTh.innerHTML = initialTh.innerHTML.replace(' ↕', ' ↓');
     }
     sortData();
+}
+
+// ── TF-IDF Lookalike Engine ──────────────────────────────────────────────────
+
+function buildTfIdfVectors(data) {
+    const STOPWORDS = new Set(['및', '개발', '공급', '제조', '판매', '기반', '소프트웨어',
+        '시스템', '서비스', '서비스업', '개발업', '공급업', '제공업', '제조업', '도소매업',
+        '관련', '솔루션', '컨설팅업', '플랫폼', '운영업', '전문', '의', '에', '을', '를',
+        '이', '가', '은', '는', '와', '과', '도', '로', '으로', '에서', '에게', '까지']);
+
+    // Term frequency for each doc
+    const tokenize = (text) =>
+        text.toLowerCase().split(/[\s,()/·\-]+/).filter(w => w.length > 1 && !STOPWORDS.has(w));
+
+    const allTokens = data.map(item => tokenize(item.business + ' ' + (item.category || '') + ' ' + (item.llm_tag || '')));
+
+    // Count DF (document frequency)
+    const df = {};
+    allTokens.forEach(tokens => {
+        new Set(tokens).forEach(t => { df[t] = (df[t] || 0) + 1; });
+    });
+
+    const N = data.length;
+    // Build TF-IDF vectors
+    return allTokens.map(tokens => {
+        const tf = {};
+        tokens.forEach(t => { tf[t] = (tf[t] || 0) + 1; });
+        const vec = {};
+        const len = tokens.length || 1;
+        Object.entries(tf).forEach(([t, cnt]) => {
+            const idf = Math.log((N + 1) / ((df[t] || 0) + 1)) + 1;
+            vec[t] = (cnt / len) * idf;
+        });
+        return vec;
+    });
+}
+
+function cosineSimilarity(vecA, vecB) {
+    const keysA = Object.keys(vecA);
+    let dot = 0, normA = 0, normB = 0;
+    keysA.forEach(k => {
+        dot += (vecA[k] || 0) * (vecB[k] || 0);
+        normA += vecA[k] ** 2;
+    });
+    Object.values(vecB).forEach(v => { normB += v ** 2; });
+    return normA && normB ? dot / (Math.sqrt(normA) * Math.sqrt(normB)) : 0;
+}
+
+let _tfidfVectors = null;
+
+function showLookalikes(targetName) {
+    // Lazy-build vectors once
+    if (!_tfidfVectors) {
+        _tfidfVectors = buildTfIdfVectors(allData);
+    }
+
+    const targetIdx = allData.findIndex(d => d.name === targetName);
+    if (targetIdx === -1) return alert('해당 스타트업을 찾을 수 없습니다.');
+    const targetVec = _tfidfVectors[targetIdx];
+    const target = allData[targetIdx];
+
+    // Score all others
+    const scores = allData
+        .map((item, idx) => ({ item, sim: idx === targetIdx ? -1 : cosineSimilarity(targetVec, _tfidfVectors[idx]) }))
+        .filter(x => x.sim > 0)
+        .sort((a, b) => b.sim - a.sim)
+        .slice(0, 3);
+
+    // Build modal content
+    const gradeCls = g => `grade-${(g || 'b').toLowerCase()}`;
+    const simBar = (sim) => {
+        const pct = Math.round(sim * 100);
+        const color = pct > 70 ? '#00d2ff' : pct > 45 ? '#8338ec' : '#adb5bd';
+        return `<div style="height:4px; background:rgba(255,255,255,0.1); border-radius:2px; margin-top:6px;">
+            <div style="height:4px; width:${pct}%; background:${color}; border-radius:2px; transition:width 0.6s ease;"></div>
+        </div>
+        <span style="font-size:10px; color:${color}; font-weight:700;">${pct}% match</span>`;
+    };
+
+    let html = `
+        <div style="background:rgba(0,210,255,0.05); border:1px solid rgba(0,210,255,0.2); border-radius:10px; padding:12px; margin-bottom:16px;">
+            <div style="font-size:11px; color:#adb5bd; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">분석 대상</div>
+            <div style="font-weight:700; font-size:15px;">${target.name}</div>
+            <div style="font-size:12px; color:#adb5bd; margin-top:4px;">${target.business.substring(0, 80)}${target.business.length > 80 ? '...' : ''}</div>
+        </div>
+        <div style="font-size:11px; color:#adb5bd; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">🔍 가장 유사한 스타트업 (TF-IDF 코사인 유사도)</div>
+    `;
+
+    if (scores.length === 0) {
+        html += `<div style="color:#adb5bd; text-align:center; padding:20px;">유사한 기업을 찾지 못했습니다.</div>`;
+    } else {
+        scores.forEach((s, i) => {
+            const medalEmojis = ['🥇', '🥈', '🥉'];
+            const grade = s.item.investment_grade || 'B';
+            html += `
+                <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:12px; margin-bottom:10px; transition:border-color 0.2s;" 
+                     onmouseover="this.style.borderColor='rgba(0,210,255,0.3)'" 
+                     onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span style="font-size:18px;">${medalEmojis[i]}</span>
+                            <div>
+                                <span class="grade-badge ${gradeCls(grade)}" style="font-size:11px; padding:2px 6px;">${grade}</span>
+                                <span style="font-weight:600; margin-left:6px;">${s.item.name}</span>
+                            </div>
+                        </div>
+                        <span style="font-size:11px; color:#adb5bd;">${s.item.period}</span>
+                    </div>
+                    <div style="font-size:12px; color:#adb5bd; margin-top:6px; margin-left:26px;">${s.item.business.substring(0, 90)}${s.item.business.length > 90 ? '...' : ''}</div>
+                    ${s.item.llm_tag ? `<div style="margin-top:4px; margin-left:26px;"><span class="tag-ai">✨ ${s.item.llm_tag}</span></div>` : ''}
+                    <div style="margin-left:26px; margin-top:8px;">${simBar(s.sim)}</div>
+                </div>
+            `;
+        });
+    }
+
+    // Use the shared emailModal but repurpose it for twins
+    const modalTitle = document.querySelector('#emailModal h3');
+    modalTitle.textContent = `👯 Startup Twins — "${target.name}"과 유사한 기업`;
+
+    const textarea = document.getElementById('emailDraftContent');
+    textarea.style.display = 'none';
+
+    const copyBtn = document.getElementById('copyEmailBtn');
+    if (copyBtn) copyBtn.style.display = 'none';
+
+    let visualDiv = document.getElementById('twinVisualDiv');
+    if (!visualDiv) {
+        visualDiv = document.createElement('div');
+        visualDiv.id = 'twinVisualDiv';
+        textarea.parentNode.insertBefore(visualDiv, textarea);
+    }
+    visualDiv.style.display = 'block';
+    visualDiv.innerHTML = html;
+
+    document.getElementById('emailModal').style.display = 'flex';
 }
 
 // Init
