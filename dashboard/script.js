@@ -299,6 +299,8 @@ function renderTable() {
                     </select>
                     <button onclick="editWatchlistNote('${safeName}')" style="background:#1a1d2e; color:#00d2ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">📝 Memo</button>
                     ${item.outreach_draft ? `<button onclick="showEmailDraft('${encodeURIComponent(item.outreach_draft)}')" style="background:#1a1d2e; color:#f1a5ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">✉️ Email</button>` : ''}
+                    ${item.lp_teaser ? `<button onclick="showLPTeaser('${encodeURIComponent(item.lp_teaser)}')" style="background:#1a1d2e; color:#ffdd57; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">🌐 LP (EN)</button>` : ''}
+                    <button onclick="showLookalikes('${safeName}')" style="background:#1a1d2e; color:#fff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">👯 Twins</button>
                     <span style="color:#adb5bd; font-family:serif; font-style:italic; max-width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${wData.note}">${wData.note || 'No notes...'}</span>
                 </div>
             `;
@@ -307,6 +309,8 @@ function renderTable() {
         const intelLinks = `<span class="intel-links">
             <a href="https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(item.name + ' ' + (item.ceo || ''))}" target="_blank" class="intel-btn li" title="LinkedIn 검색">in</a>
             <a href="https://search.naver.com/search.naver?query=${encodeURIComponent(item.name + ' 스타트업')}" target="_blank" class="intel-btn nv" title="Naver 검색">N</a>
+            <a href="http://kpat.kipris.or.kr/kpat/searchLogina.do?next=MainSearch#page1?keyword=${encodeURIComponent(item.name)}" onclick="navigator.clipboard.writeText('${item.name}')" target="_blank" class="intel-btn kp" title="특허 검색 (클릭 시 이름 복사됨)" style="background:#4CAF50; color:#fff; border-color:#388E3C;">⚖️</a>
+            <a href="https://www.google.com/search?q=${encodeURIComponent('"' + item.ceo + '" AND ("횡령" OR "배임" OR "파산" OR "임금체불" OR "사기")')}" target="_blank" class="intel-btn red" title="Red-Flag 창업자 검증" style="background:transparent; border-color:#ff4444; color:#ff4444;">🚨</a>
         </span>`;
         
         let aiTag = '';
@@ -459,6 +463,40 @@ function showEmailDraft(encodedDraft) {
     document.getElementById('emailModal').style.display = 'flex';
 }
 
+function showEmailDraft(encodedDraft) {
+    const draft = decodeURIComponent(encodedDraft);
+    const modalTitle = document.querySelector('#emailModal h3');
+    modalTitle.textContent = "✉️ Cold-Start 파이프라인 (아웃바운드 초안)";
+    
+    document.getElementById('emailDraftContent').value = draft;
+    document.getElementById('emailDraftContent').style.display = 'block';
+    
+    const visualDiv = document.getElementById('twinVisualDiv');
+    if (visualDiv) visualDiv.style.display = 'none';
+    
+    const copyBtn = document.getElementById('copyEmailBtn');
+    if (copyBtn) copyBtn.style.display = 'inline-block';
+    
+    document.getElementById('emailModal').style.display = 'flex';
+}
+
+function showLPTeaser(encodedDraft) {
+    const draft = decodeURIComponent(encodedDraft);
+    const modalTitle = document.querySelector('#emailModal h3');
+    modalTitle.textContent = "🌐 Global LP Syndication (Teaser)";
+    
+    document.getElementById('emailDraftContent').value = draft;
+    document.getElementById('emailDraftContent').style.display = 'block';
+    
+    const visualDiv = document.getElementById('twinVisualDiv');
+    if (visualDiv) visualDiv.style.display = 'none';
+    
+    const copyBtn = document.getElementById('copyEmailBtn');
+    if (copyBtn) copyBtn.style.display = 'inline-block';
+    
+    document.getElementById('emailModal').style.display = 'flex';
+}
+
 document.getElementById('closeEmailModal')?.addEventListener('click', () => {
     document.getElementById('emailModal').style.display = 'none';
 });
@@ -466,7 +504,7 @@ document.getElementById('closeEmailModal')?.addEventListener('click', () => {
 document.getElementById('copyEmailBtn')?.addEventListener('click', () => {
     const text = document.getElementById('emailDraftContent').value;
     navigator.clipboard.writeText(text).then(() => {
-        alert("이메일 초안이 클립보드에 복사되었습니다!");
+        alert("내용이 클립보드에 복사되었습니다!");
     }).catch(err => {
         alert("복사 실패. 직접 영역을 지정하여 복사해주세요.");
     });

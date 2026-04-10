@@ -68,6 +68,27 @@ def get_outreach_draft(name, business_desc, llm_tag):
     except Exception as e:
         return None
 
+def get_lp_teaser(name, business_desc, llm_tag):
+    if not is_openai_ready: return None
+    cache_key = f"lp_{name}_{business_desc}"
+    if cache_key in llm_cache: return llm_cache[cache_key]
+    
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a top-tier VC analyst. Write a highly professional 1-paragraph investment teaser in ENGLISH tailored for foreign LPs/investors. Summarize the Korean startup's 'business description' professionally, highlighting their tech. Keep it under 60 words. No intro/outro."},
+                {"role": "user", "content": f"Company: {name}\nTag: {llm_tag}\nDesc: {business_desc}"}
+            ],
+            temperature=0.3,
+            max_tokens=150
+        )
+        draft = response.choices[0].message.content.strip()
+        llm_cache[cache_key] = draft
+        return draft
+    except Exception as e:
+        return None
+
 # ── Import parse + score logic from filter_v2 ──
 
 def parse_xls(filepath):
@@ -312,9 +333,11 @@ def main():
                     # Generate Outreach Draft for elite prospects
                     if score >= 40:
                         c['outreach_draft'] = get_outreach_draft(c['name'], c['business'], c['llm_tag'])
+                        c['lp_teaser'] = get_lp_teaser(c['name'], c['business'], c['llm_tag'])
                 else:
                     c['llm_tag'] = None
                     c['outreach_draft'] = None
+                    c['lp_teaser'] = None
                 startups.append(c)
 
         by_cat = defaultdict(list)
@@ -411,7 +434,8 @@ def main():
                 'investment_grade': grade,
                 'talent_signals': s.get('talent_signals', []),
                 'llm_tag': s.get('llm_tag', None),
-                'outreach_draft': s.get('outreach_draft', None)
+                'outreach_draft': s.get('outreach_draft', None),
+                'lp_teaser': s.get('lp_teaser', None)
             })
 
     with open('data/startups_all_weeks.json', 'w', encoding='utf-8') as f:
