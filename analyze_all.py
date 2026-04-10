@@ -47,6 +47,27 @@ def get_llm_tag(business_desc):
         print(f"  [!] OpenAI API error: {e}")
         return None
 
+def get_outreach_draft(name, business_desc, llm_tag):
+    if not is_openai_ready: return None
+    cache_key = f"draft_{name}_{business_desc}"
+    if cache_key in llm_cache: return llm_cache[cache_key]
+    
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a professional Korean top-tier VC analyst. Write a concise, polite, and persuasive cold-email draft (in Korean) to a newly incorporated startup CEO. Praise their specific deep-tech approach based on their 'business description' and 'LLM tag', and propose a brief coffee chat to discuss potential early-stage cooperation. Tone should be highly professional, avoiding cliches. Do not include subject line, just the body."},
+                {"role": "user", "content": f"Company Name: {name}\nTag: {llm_tag}\nBusiness Description: {business_desc}"}
+            ],
+            temperature=0.3,
+            max_tokens=250
+        )
+        draft = response.choices[0].message.content.strip()
+        llm_cache[cache_key] = draft
+        return draft
+    except Exception as e:
+        return None
+
 # ── Import parse + score logic from filter_v2 ──
 
 def parse_xls(filepath):
@@ -178,9 +199,20 @@ def detect_talent_signals(company, base_score):
     
     signals = []
     
-    # 1. Campus / Tech Hub
+    # 1. The Ghost Radar (Incubator Geolocation)
+    incubator_keywords = [
+        '역삼로 180', '역삼로 172', '역삼로 165', '역삼로 169', # Maru 180, 360, TIPS Town
+        '백범로31길 21', '대왕판교로815', # Seoul Startup Hub, Pangyo Startup Campus
+        '관악로 1', '대학로 291', '문지로 193', # SNU, KAIST
+        '청암로 77', '유니스트길 50', # Postech, UNIST
+        '홍릉로', '고려대로', '연세로' # Major University Hubs
+    ]
+    if any(k in address for k in incubator_keywords):
+        signals.append('국가 핵심 인큐베이터 / 대학 연구소 스핀오프')
+
+    # Legacy Hub check for business purpse text
     hub_keywords = ['대학교', '산학협력단', '카이스트', 'kaist', '포스텍', '포항공대', 'unist', 'dgist', '팁스타운', '판교테크노밸리', '마루180', '마루360', '마곡', '홍릉', '연구소기업', '사내벤처', '기술지주']
-    if any(k in address or k in biz for k in hub_keywords):
+    if any(k in biz for k in hub_keywords) and '국가 핵심 인큐베이터 / 대학 연구소 스핀오프' not in signals:
         signals.append('캠퍼스/연구소/테크허브')
         
     # 2. Deep-Tech / Over-Engineered Purpose
@@ -230,7 +262,9 @@ def score_startup(company):
         score -= 15
 
     signals = detect_talent_signals(company, score)
-    if signals:
+    if '국가 핵심 인큐베이터 / 대학 연구소 스핀오프' in signals:
+        score += 15
+    elif signals:
         score += 5
 
     cat = categorize(biz)
@@ -275,8 +309,12 @@ def main():
                 c['talent_signals'] = signals
                 if score >= 35:
                     c['llm_tag'] = get_llm_tag(c['business'])
+                    # Generate Outreach Draft for elite prospects
+                    if score >= 40:
+                        c['outreach_draft'] = get_outreach_draft(c['name'], c['business'], c['llm_tag'])
                 else:
                     c['llm_tag'] = None
+                    c['outreach_draft'] = None
                 startups.append(c)
 
         by_cat = defaultdict(list)
@@ -372,7 +410,8 @@ def main():
                 'score': score,
                 'investment_grade': grade,
                 'talent_signals': s.get('talent_signals', []),
-                'llm_tag': s.get('llm_tag', None)
+                'llm_tag': s.get('llm_tag', None),
+                'outreach_draft': s.get('outreach_draft', None)
             })
 
     with open('data/startups_all_weeks.json', 'w', encoding='utf-8') as f:

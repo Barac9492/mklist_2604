@@ -51,12 +51,24 @@
                         <canvas id="regionChart"></canvas>
                     </div>
                 </div>
-            </div>
-
-            <div class="heatmap-section glass-panel">
-                <h2>📈 Trending Deep-Tech Keywords</h2>
-                <div id="heatmapContainer" class="heatmap-container">
-                    <!-- Populated by JS -->
+                <!-- Heatmap & Momentum Layout -->
+                <div style="display: flex; gap: 20px; align-items: stretch; margin-bottom: 20px;">
+                    <div style="flex: 2; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 15px;">
+                        <h4 style="margin: 0 0 10px 0; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                            <span>📈</span> Trending Deep-Tech Keywords
+                        </h4>
+                        <div id="heatmapContainer" class="heatmap-container" style="margin-bottom:0; background:transparent; padding:0; border:none;">
+                            <!-- Tags will be dynamically injected here -->
+                        </div>
+                    </div>
+                    <div id="momentumContainer" style="flex: 1; background: linear-gradient(135deg, rgba(131,56,236,0.1), rgba(255,0,110,0.1)); border: 1px solid rgba(131,56,236,0.3); border-radius: 12px; padding: 15px;">
+                        <h4 style="margin: 0 0 10px 0; font-size: 14px; display: flex; align-items: center; gap: 8px; color:#f1a5ff;">
+                            <span>🚀</span> Weekly Macro Momentum
+                        </h4>
+                        <div id="momentumContent" style="font-size: 13px; color:#e2e2e2;">
+                            데이터를 분석 중입니다...
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -108,6 +120,21 @@
 
     <!-- Chart.js via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Email Draft Modal -->
+    <div id="emailModal" style="display:none; position:fixed; z-index:100; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
+        <div style="background:#1a1d2e; padding:20px; border-radius:10px; border:1px solid #333; width:600px; max-width:90%;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                <h3 style="margin:0;">✉️ Cold-Start 파이프라인 (아웃바운드 초안)</h3>
+                <span id="closeEmailModal" style="cursor:pointer; font-size:24px; line-height:1;">&times;</span>
+            </div>
+            <textarea id="emailDraftContent" style="width:100%; height:300px; background:#0f111a; color:#fff; padding:15px; border:1px solid #333; border-radius:4px; font-family:inherit; font-size:14px; line-height:1.6; resize:none;"></textarea>
+            <div style="text-align:right; margin-top:15px;">
+                <button id="copyEmailBtn" class="btn-outline" style="border-color:#00d2ff; color:#00d2ff;"><span style="filter:none;">📋</span> 복사하기</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

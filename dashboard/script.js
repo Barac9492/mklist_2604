@@ -40,6 +40,7 @@ function initDashboard() {
     renderCharts();
     populateCategoryFilter();
     applyFilters(); // This will trigger sort, heatmap, and renderTable
+    renderMomentum();
     setupEventListeners();
 }
 
@@ -297,6 +298,7 @@ function renderTable() {
                         <option value="Passed" ${wData.status === 'Passed' ? 'selected' : ''}>❌ Passed</option>
                     </select>
                     <button onclick="editWatchlistNote('${safeName}')" style="background:#1a1d2e; color:#00d2ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">📝 Memo</button>
+                    ${item.outreach_draft ? `<button onclick="showEmailDraft('${encodeURIComponent(item.outreach_draft)}')" style="background:#1a1d2e; color:#f1a5ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">✉️ Email</button>` : ''}
                     <span style="color:#adb5bd; font-family:serif; font-style:italic; max-width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${wData.note}">${wData.note || 'No notes...'}</span>
                 </div>
             `;
@@ -451,6 +453,25 @@ function generateWeeklyMemo() {
     });
 }
 
+function showEmailDraft(encodedDraft) {
+    const draft = decodeURIComponent(encodedDraft);
+    document.getElementById('emailDraftContent').value = draft;
+    document.getElementById('emailModal').style.display = 'flex';
+}
+
+document.getElementById('closeEmailModal')?.addEventListener('click', () => {
+    document.getElementById('emailModal').style.display = 'none';
+});
+
+document.getElementById('copyEmailBtn')?.addEventListener('click', () => {
+    const text = document.getElementById('emailDraftContent').value;
+    navigator.clipboard.writeText(text).then(() => {
+        alert("이메일 초안이 클립보드에 복사되었습니다!");
+    }).catch(err => {
+        alert("복사 실패. 직접 영역을 지정하여 복사해주세요.");
+    });
+});
+
 function exportToCSV() {
     if (filteredData.length === 0) return alert("데이터가 없습니다.");
     
@@ -508,6 +529,65 @@ function renderHeatmap() {
         tag.textContent = `${item.word} (${item.count})`;
         container.appendChild(tag);
     });
+}
+
+function renderMomentum() {
+    const momentumContainer = document.getElementById('momentumContent');
+    if (!momentumContainer || allData.length === 0) return;
+
+    const periods = [...new Set(allData.map(d => d.period))].sort((a,b) => b.localeCompare(a));
+    if (periods.length < 2) {
+        momentumContainer.innerHTML = "데이터가 부족하여 주간 비교를 수행할 수 없습니다.";
+        return;
+    }
+
+    const currentPeriod = periods[0];
+    const previousPeriod = periods[1];
+
+    const countWords = (dataArray) => {
+        const ignoreWords = ['및', '개발', '공급', '제조', '판매', '기반', '소프트웨어', '시스템', '서비스', '서비스업', '개발업', '공급업', '제공업', '제조업', '도소매업', '관련', '솔루션', '컨설팅업', '플랫폼', '운영업', '전문'];
+        const wordCounts = {};
+        dataArray.forEach(item => {
+            const words = item.business.split(/[\s,()/\·]+/);
+            words.forEach(w => {
+                if (w.length > 1 && !ignoreWords.includes(w)) {
+                    wordCounts[w] = (wordCounts[w] || 0) + 1;
+                }
+            });
+        });
+        return wordCounts;
+    };
+
+    const currentCounts = countWords(allData.filter(d => d.period === currentPeriod));
+    const previousCounts = countWords(allData.filter(d => d.period === previousPeriod));
+
+    const momentumTarget = [];
+    for (const [word, curCount] of Object.entries(currentCounts)) {
+        if (curCount >= 2) { 
+            const prevCount = previousCounts[word] || 0;
+            const diff = curCount - prevCount;
+            if (diff > 0) {
+                momentumTarget.push({ word, diff, curCount, prevCount });
+            }
+        }
+    }
+    
+    momentumTarget.sort((a,b) => b.diff - a.diff);
+    const topMomentum = momentumTarget.slice(0, 5);
+
+    if (topMomentum.length === 0) {
+        momentumContainer.innerHTML = "이전 주차 대비 급상승한 키워드가 없습니다.";
+        return;
+    }
+
+    let html = `<div style="margin-bottom:8px; color:#adb5bd;">(${previousPeriod} ➔ ${currentPeriod} 비교)</div>`;
+    topMomentum.forEach(m => {
+        html += `<div style="display:flex; justify-content:space-between; margin-bottom:6px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:4px;">
+            <strong style="color:#fff;">${m.word}</strong>
+            <span style="color:#00d2ff; font-weight:bold;">+${m.diff} 건 <span style="font-size:10px; color:#666; font-weight:normal;">(총 ${m.curCount}건)</span></span>
+        </div>`;
+    });
+    momentumContainer.innerHTML = html;
 }
 
 function setupEventListeners() {
