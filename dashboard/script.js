@@ -1,7 +1,18 @@
 let allData = [];
 let filteredData = [];
 let currentSort = { column: 'score', asc: false };
-let watchlist = JSON.parse(localStorage.getItem('mk_watchlist') || '[]');
+
+let rawWatchlist = JSON.parse(localStorage.getItem('mk_watchlist') || '{}');
+let watchlist = {};
+if (Array.isArray(rawWatchlist)) {
+    rawWatchlist.forEach(name => {
+        watchlist[name] = { status: 'Scouted', note: '' };
+    });
+    localStorage.setItem('mk_watchlist', JSON.stringify(watchlist));
+} else {
+    watchlist = rawWatchlist;
+}
+
 let isWatchlistView = false;
 
 // Load data
@@ -269,9 +280,32 @@ function renderTable() {
             const tooltipText = "사유: " + item.talent_signals.join(", ");
             eliteBadge = `<span class="badge-elite" title="${tooltipText}">🎖️ Elite</span>`;
         }
+        
+        let serialBadge = '';
+        if (item.is_serial_founder) {
+            serialBadge = `<span class="badge-serial" title="동일한 대표자가 복수의 법인을 설립함">🔄 Serial</span>`;
+        }
 
-        const isStarred = watchlist.includes(item.name);
-        const starBtn = `<button class="star-btn ${isStarred ? 'active' : ''}" onclick="toggleWatchlistItem('${item.name.replace(/'/g, "\\'")}')">${isStarred ? '★' : '☆'}</button>`;
+        const isStarred = item.name in watchlist;
+        const safeName = item.name.replace(/'/g, "\\'");
+        const starBtn = `<button class="star-btn ${isStarred ? 'active' : ''}" onclick="toggleWatchlistItem('${safeName}')">${isStarred ? '★' : '☆'}</button>`;
+        
+        let crmControls = '';
+        if (isStarred) {
+            const wData = watchlist[item.name];
+            crmControls = `
+                <div class="crm-controls" style="margin-top:6px; background:rgba(0,0,0,0.2); padding:6px; border-radius:6px; font-size:12px; display:flex; gap:6px; align-items:center;">
+                    <select onchange="updateWatchlistStatus('${safeName}', this.value)" style="background:#1a1d2e; color:#fff; border:1px solid #333; border-radius:4px; padding:2px 4px; font-size:11px;">
+                        <option value="Scouted" ${wData.status === 'Scouted' ? 'selected' : ''}>🔍 Scouted</option>
+                        <option value="Contacted" ${wData.status === 'Contacted' ? 'selected' : ''}>✉️ Contacted</option>
+                        <option value="Meeting Set" ${wData.status === 'Meeting Set' ? 'selected' : ''}>🤝 Meeting Set</option>
+                        <option value="Passed" ${wData.status === 'Passed' ? 'selected' : ''}>❌ Passed</option>
+                    </select>
+                    <button onclick="editWatchlistNote('${safeName}')" style="background:#1a1d2e; color:#00d2ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">📝 Memo</button>
+                    <span style="color:#adb5bd; font-family:serif; font-style:italic; max-width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${wData.note}">${wData.note || 'No notes...'}</span>
+                </div>
+            `;
+        }
         
         const intelLinks = `<span class="intel-links">
             <a href="https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(item.name + ' ' + (item.ceo || ''))}" target="_blank" class="intel-btn li" title="LinkedIn 검색">in</a>
@@ -291,8 +325,10 @@ function renderTable() {
                 <div class="name-wrapper">
                     <a href="https://www.google.com/search?q=${encodeURIComponent(item.name + ' 스타트업 홈페이지')}" target="_blank" class="rank-biz-name" title="Google 웹사이트 검색">${item.name}</a>
                     ${eliteBadge}
+                    ${serialBadge}
                     ${intelLinks}
                 </div>
+                ${crmControls}
             </td>
             <td><span class="tag-category">${item.category || '-'}</span>${aiTag}</td>
             <td style="color:#adb5bd">${capDisplay}</td>
@@ -312,7 +348,7 @@ function applyFilters() {
         const matchSearch = item.name.toLowerCase().includes(searchStr) || item.business.toLowerCase().includes(searchStr);
         const matchCat = (catVal === 'all') || (item.category === catVal);
         const matchGrade = (gradeVal === 'all') || (item.investment_grade === gradeVal);
-        const matchWatchlist = isWatchlistView ? watchlist.includes(item.name) : true;
+        const matchWatchlist = isWatchlistView ? (item.name in watchlist) : true;
         
         return matchSearch && matchCat && matchGrade && matchWatchlist;
     });
@@ -352,10 +388,10 @@ function sortData() {
 
 // CRM Logic Functions
 function toggleWatchlistItem(name) {
-    if (watchlist.includes(name)) {
-        watchlist = watchlist.filter(n => n !== name);
+    if (name in watchlist) {
+        delete watchlist[name];
     } else {
-        watchlist.push(name);
+        watchlist[name] = { status: 'Scouted', note: '' };
     }
     localStorage.setItem('mk_watchlist', JSON.stringify(watchlist));
     
@@ -364,6 +400,61 @@ function toggleWatchlistItem(name) {
     } else {
         renderTable(); 
     }
+}
+
+function updateWatchlistStatus(name, status) {
+    if (name in watchlist) {
+        watchlist[name].status = status;
+        localStorage.setItem('mk_watchlist', JSON.stringify(watchlist));
+    }
+}
+
+function editWatchlistNote(name) {
+    if (name in watchlist) {
+        const currentNote = watchlist[name].note;
+        const newNote = prompt(`"${name}"에 대한 메모를 입력하세요:`, currentNote);
+        if (newNote !== null) {
+            watchlist[name].note = newNote;
+            localStorage.setItem('mk_watchlist', JSON.stringify(watchlist));
+            renderTable();
+        }
+    }
+}
+
+function generateWeeklyMemo() {
+    if (allData.length === 0) return alert("데이터가 없습니다.");
+    // Find the latest period string by sorting descending and picking the first
+    const periods = [...new Set(allData.map(d => d.period))].sort((a,b) => b.localeCompare(a));
+    const latestPeriod = periods[0];
+    
+    const topPicks = allData.filter(d => d.period === latestPeriod && d.score >= 35).sort((a,b) => b.score - a.score);
+    
+    if (topPicks.length === 0) {
+        return alert(`${latestPeriod} 주차에는 점수 35점 이상(S/A급) 후보가 없습니다.`);
+    }
+
+    let memo = `🎯 주간 신규 설립 스타트업 요약 리포트 (${latestPeriod})\n`;
+    memo += `총 ${topPicks.length}개의 주목할만한 (S/A급) 타겟이 발견되었습니다.\n\n`;
+
+    topPicks.forEach((item, idx) => {
+        const grade = item.score >= 45 ? 'S' : 'A';
+        memo += `${idx + 1}. ${item.name} [${grade}급 - Score: ${item.score}]\n`;
+        memo += `   - 카테고리: ${item.category || '-'}${item.llm_tag ? ` (✨ ${item.llm_tag})` : ''}\n`;
+        memo += `   - 대표자: ${item.ceo}\n`;
+        if (item.talent_signals && item.talent_signals.length > 0) {
+            memo += `   - 주요 시그널: ${item.talent_signals.join(', ')}\n`;
+        }
+        memo += `   - 비즈니스 모델: ${item.business}\n\n`;
+    });
+
+    memo += `---\n이 리포트는 MK Scanner 엔진에서 자동으로 추출되었습니다.`;
+
+    // Try to copy to clipboard
+    navigator.clipboard.writeText(memo).then(() => {
+        alert(`주간 리포트가 클립보드에 복사되었습니다! 슬랙이나 이메일에 붙여넣기 하세요.\n\n[미리보기]\n${memo.substring(0, 300)}...`);
+    }).catch(err => {
+        alert("클립보드 복사에 실패했습니다. 아래 텍스트를 복사하세요:\n\n" + memo);
+    });
 }
 
 function exportToCSV() {
@@ -437,6 +528,8 @@ function setupEventListeners() {
     });
     
     document.getElementById('exportCsvBtn')?.addEventListener('click', exportToCSV);
+    const generateMemoBtn = document.getElementById('generateMemoBtn');
+    if (generateMemoBtn) generateMemoBtn.addEventListener('click', generateWeeklyMemo);
     
     document.querySelectorAll('.sortable').forEach(th => {
         th.addEventListener('click', () => {

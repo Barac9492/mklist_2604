@@ -8,9 +8,13 @@
     "address": "서울특별시 서초구 효령로 304, 7010호(서초동, 국제전자센터)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -23,7 +27,9 @@
     "category": "Bio/Health",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -36,7 +42,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -49,7 +57,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -62,7 +72,9 @@
     "category": "Data",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -75,7 +87,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -88,9 +102,11 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -103,7 +119,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -116,7 +134,9 @@
     "category": "Other",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -129,9 +149,11 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -144,7 +166,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -157,7 +181,9 @@
     "category": "Other",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -168,9 +194,13 @@
     "address": "서울특별시 중랑구 동일로129길 35, 214호215호216호(중화동, 태능에셈빌)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -183,7 +213,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -196,9 +228,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -211,7 +245,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -224,7 +260,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -237,7 +275,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -250,7 +290,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -261,9 +303,13 @@
     "address": "서울특별시 마포구 와우산로 105, 5층-제이404호(서교동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -276,9 +322,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -291,7 +339,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -304,7 +354,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -317,9 +369,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -332,9 +386,11 @@
     "category": "Software",
     "score": 43,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -347,7 +403,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -360,7 +418,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -373,7 +433,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -386,7 +448,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -399,7 +463,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -410,9 +476,13 @@
     "address": "서울특별시 송파구 송파대로43길 5, 201호(석촌동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -425,7 +495,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -438,7 +510,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -451,7 +525,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -462,9 +538,13 @@
     "address": "서울특별시 성동구 아차산로 38, 3층 311호(성수동1가, 개풍빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -477,7 +557,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -488,9 +570,13 @@
     "address": "서울특별시 관악구 봉천로 535, 3층(봉천동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -503,7 +589,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -514,9 +602,13 @@
     "address": "서울특별시 서초구 서초중앙로 125, 504호(서초동, 로이어즈타워)",
     "region": "서울",
     "category": "Content/Media",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -529,7 +621,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -542,7 +636,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -555,7 +651,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -568,7 +666,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -581,7 +681,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -594,7 +696,9 @@
     "category": "Finance",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -607,7 +711,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -620,9 +726,11 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -635,7 +743,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -648,9 +758,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -663,7 +775,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -676,7 +790,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -687,9 +803,13 @@
     "address": "서울특별시 강남구 봉은사로 317, 2층 2186호(논현동, 아모제논현빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -702,9 +822,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -715,9 +837,13 @@
     "address": "서울특별시 서초구 사임당로8길 13, 4층 402-엘810호(서초동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -730,7 +856,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -743,7 +871,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -756,7 +886,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -769,7 +901,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -782,7 +916,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -793,9 +929,13 @@
     "address": "서울특별시 강남구 테헤란로 142, 5층 106호(역삼동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -808,7 +948,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -821,7 +963,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -834,7 +978,9 @@
     "category": "Data",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -845,9 +991,13 @@
     "address": "서울특별시 강남구 강남대로112길 47, 2층-556에이호(논현동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -860,7 +1010,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -871,9 +1023,13 @@
     "address": "서울특별시 강남구 삼성로51길 37, 113동 305호(대치동, 래미안대치팰리스)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -886,9 +1042,11 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -899,9 +1057,13 @@
     "address": "서울특별시 성동구 연무장7길 16, 8층(성수동2가, 한서빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -914,7 +1076,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -925,9 +1089,13 @@
     "address": "서울특별시 서초구 방배천로30길 27, 지하1층(방배동, 주홍빌딩)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -940,7 +1108,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -953,7 +1123,9 @@
     "category": "EdTech",
     "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -966,7 +1138,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -977,9 +1151,13 @@
     "address": "부산광역시 연제구 안연로7번나길 10, 1층(연산동)",
     "region": "부산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -992,7 +1170,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1005,7 +1185,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1018,7 +1200,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1031,7 +1215,9 @@
     "category": "Other",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1044,7 +1230,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1057,9 +1245,11 @@
     "category": "Bio/Health",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1070,9 +1260,13 @@
     "address": "인천광역시 부평구 경원대로 1415, 5층 502호(부평동, 파라움)",
     "region": "인천",
     "category": "EdTech",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1083,9 +1277,13 @@
     "address": "인천광역시 연수구 송도과학로16번길 13-18, 제9층 934호(송도동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1098,7 +1296,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1111,7 +1311,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1122,9 +1324,13 @@
     "address": "인천광역시 연수구 인천타워대로 301, 비동 716-에이21호(송도동, 센텀하이브)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1137,7 +1343,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1150,7 +1358,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1163,7 +1373,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1176,7 +1388,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1189,9 +1403,12 @@
     "category": "AI/ML",
     "score": 43,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1204,9 +1421,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1217,9 +1436,13 @@
     "address": "대전광역시 대덕구 비래서로10번길 40, 210호(비래동)",
     "region": "대전",
     "category": "DeepTech",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1232,7 +1455,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1245,7 +1470,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1258,9 +1485,11 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1271,9 +1500,13 @@
     "address": "울산광역시 남구 꽃대나리로46번길 29, 2동 509호(야음동, 태양한신아파트)",
     "region": "울산",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1286,7 +1519,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/6~2/12",
@@ -1299,7 +1534,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1312,7 +1549,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1325,7 +1564,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1336,9 +1577,13 @@
     "address": "서울특별시 영등포구 여의대방로65길 10, 제8층 803호, 804호(여의도동, 유니온타워)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1351,7 +1596,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1364,7 +1611,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1375,9 +1624,13 @@
     "address": "서울특별시 금천구 가산디지털1로 5, 606호(가산동, 대륭테크노타워 20차)",
     "region": "서울",
     "category": "CleanTech",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1390,7 +1643,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1401,9 +1656,13 @@
     "address": "서울특별시 양천구 신월로 376, 8층 801호 엘-7호실(신정동, 법정빌딩)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1416,7 +1675,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1429,7 +1690,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1440,9 +1703,13 @@
     "address": "서울특별시 강남구 논현로123길 12, 2층(논현동)",
     "region": "서울",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1455,7 +1722,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1466,9 +1735,13 @@
     "address": "서울특별시 금천구 디지털로9길 65, 1동 15층 8호(가산동, 백상스타타워 1차)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1481,7 +1754,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1494,7 +1769,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1505,9 +1782,13 @@
     "address": "서울특별시 구로구 디지털로30길 28, 1401호(구로동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 50,
+    "score": 55,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1520,7 +1801,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1531,9 +1814,13 @@
     "address": "서울특별시 서초구 강남대로30길 66, 7층(양재동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1546,7 +1833,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1559,7 +1848,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1572,7 +1863,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1585,7 +1878,9 @@
     "category": "AI/ML",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1598,7 +1893,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1611,7 +1908,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1624,9 +1923,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1639,7 +1940,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1652,7 +1955,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1665,7 +1970,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1678,7 +1985,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1691,7 +2000,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1704,7 +2015,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1717,7 +2030,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1730,7 +2045,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1743,7 +2060,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1756,7 +2075,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1769,9 +2090,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1784,7 +2107,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1797,7 +2122,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1810,7 +2137,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1823,7 +2152,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1836,7 +2167,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1849,9 +2182,12 @@
     "category": "Content/Media",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1864,7 +2200,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1877,7 +2215,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1890,7 +2230,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1903,7 +2245,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1916,7 +2260,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1929,7 +2275,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1942,9 +2290,12 @@
     "category": "AI/ML",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1957,7 +2308,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1970,7 +2323,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1983,7 +2338,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -1996,7 +2353,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2009,7 +2368,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2022,7 +2383,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2035,7 +2398,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2048,7 +2413,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2061,7 +2428,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2074,7 +2443,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2087,7 +2458,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2100,7 +2473,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2113,7 +2488,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2126,7 +2503,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2139,7 +2518,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2152,7 +2533,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/13~2/19",
@@ -2165,7 +2548,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2176,9 +2561,13 @@
     "address": "서울특별시 강동구 성내로 69(성내동)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2191,7 +2580,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2204,9 +2595,12 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2217,9 +2611,13 @@
     "address": "서울특별시 도봉구 마들로11길 65, 502-33호(창동, 유진빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2232,7 +2630,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2245,7 +2645,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2258,7 +2660,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2271,7 +2675,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2284,7 +2690,9 @@
     "category": "Blockchain/Fintech",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2297,7 +2705,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2308,9 +2718,13 @@
     "address": "서울특별시 성동구 왕십리로 58, 307호(성수동1가)",
     "region": "서울",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2323,7 +2737,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2336,7 +2752,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2349,9 +2767,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2364,7 +2784,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2375,9 +2797,13 @@
     "address": "서울특별시 구로구 디지털로 288, 1502호-비(구로동, 대륭포스트타워1차)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2388,9 +2814,13 @@
     "address": "서울특별시 은평구 통일로87길 6-8, 1층 101호(갈현동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2403,7 +2833,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2416,7 +2848,9 @@
     "category": "AI/ML",
     "score": 38,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2427,9 +2861,13 @@
     "address": "서울특별시 강남구 언주로149길 5, 302호(논현동, 동양빌딩)",
     "region": "서울",
     "category": "Content/Media",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2442,7 +2880,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2453,9 +2893,13 @@
     "address": "서울특별시 광진구 아차산로 378, 3층 에이337호(자양동, 한승빌딩)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 38,
+    "score": 43,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2468,7 +2912,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2481,7 +2927,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2494,7 +2942,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2507,7 +2957,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2520,7 +2972,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2533,7 +2987,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2546,7 +3002,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2559,7 +3017,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2572,9 +3032,11 @@
     "category": "Bio/Health",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2585,9 +3047,13 @@
     "address": "대전광역시 유성구 테크노4로 17, 4층 에이418호(관평동, 비즈센터)",
     "region": "대전",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2600,7 +3066,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2613,7 +3081,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/20~2/26",
@@ -2624,9 +3094,13 @@
     "address": "울산광역시 중구 학성1길 64, 1층 상가(학성동)",
     "region": "울산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2639,7 +3113,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2652,9 +3128,11 @@
     "category": "DeepTech",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2667,7 +3145,9 @@
     "category": "DeepTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2680,7 +3160,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2693,7 +3175,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2704,9 +3188,13 @@
     "address": "서울특별시 서초구 강남대로 359, 914호(서초동, 대우도씨에빛2)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2719,7 +3207,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2732,7 +3222,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2745,7 +3237,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2756,9 +3250,13 @@
     "address": "서울특별시 마포구 월드컵로 196, 비105-이87호(성산동, 대명비첸시티)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2771,7 +3269,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2782,9 +3282,13 @@
     "address": "서울특별시 송파구 가락로 244, 305 제이4호(방이동, 동원빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2797,7 +3301,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2810,7 +3316,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2823,9 +3331,11 @@
     "category": "Bio/Health",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2838,7 +3348,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2851,7 +3363,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2864,7 +3378,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2877,9 +3393,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2892,9 +3410,12 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2905,9 +3426,13 @@
     "address": "서울특별시 송파구 송파대로 345, 417동 305호(가락동, 헬리오시티)",
     "region": "서울",
     "category": "Software",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2918,9 +3443,13 @@
     "address": "서울특별시 금천구 가산디지털1로 137, 19층 1901-비-18호(가산동, 아이티캐슬 2차)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2933,9 +3462,11 @@
     "category": "Blockchain/Fintech",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2948,7 +3479,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2961,7 +3494,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2974,7 +3509,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -2987,7 +3524,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3000,7 +3539,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3011,9 +3552,13 @@
     "address": "서울특별시 강서구 공항대로39길 100, 108동501호(등촌동, 등촌대림아파트)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3024,9 +3569,13 @@
     "address": "서울특별시 강남구 논현로157길 15, 3층 340호(신사동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3039,7 +3588,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3052,7 +3603,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3065,7 +3618,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3078,7 +3633,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3089,9 +3646,13 @@
     "address": "서울특별시 강동구 올림픽로 820, 401 - 308호(암사동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3104,7 +3665,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3117,7 +3680,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3128,9 +3693,13 @@
     "address": "서울특별시 강남구 도곡로7길 11, 7층(역삼동, 지웰타워)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3143,7 +3712,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3156,9 +3727,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "딥테크 고도기술"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3171,7 +3744,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3184,7 +3759,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3195,9 +3772,13 @@
     "address": "서울특별시 강남구 강남대로112길 47, 2층 594에이호(논현동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3210,7 +3791,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3221,9 +3804,13 @@
     "address": "서울특별시 관악구 봉천로 408-1, 3층-제이489호(봉천동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3236,7 +3823,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3247,9 +3836,13 @@
     "address": "서울특별시 강동구 천호대로 989, 203-60호(천호동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3262,7 +3855,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3275,7 +3870,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3288,7 +3885,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3299,9 +3898,13 @@
     "address": "부산광역시 해운대구 센텀서로 30, 2602, 2603호-에스3(우동, 케이엔엔타워)",
     "region": "부산",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3314,9 +3917,11 @@
     "category": "Other",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3329,7 +3934,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3342,7 +3949,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3355,7 +3964,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3366,9 +3977,13 @@
     "address": "부산광역시 금정구 금강로578번길 32(구서동)",
     "region": "부산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3381,7 +3996,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3394,7 +4011,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3407,7 +4026,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3420,7 +4041,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3433,7 +4056,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3444,9 +4069,13 @@
     "address": "인천광역시 연수구 인천타워대로 301, 비동716-비7호(송도동, 송도센텀하이브)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3459,7 +4088,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3470,9 +4101,13 @@
     "address": "인천광역시 연수구 인천타워대로 323, 센트로드 비동 30층 24호(송도동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3485,7 +4120,9 @@
     "category": "Platform",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3496,9 +4133,13 @@
     "address": "인천광역시 계양구 계양문화로 54, 10층 179-4호(계산동, 대산월드프라자)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3509,9 +4150,13 @@
     "address": "인천광역시 계양구 장제로 719-17, 4층401-1005호(작전동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3524,7 +4169,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3537,9 +4184,11 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3552,7 +4201,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3565,7 +4216,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3578,7 +4231,9 @@
     "category": "Other",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "2/27~3/5",
@@ -3591,7 +4246,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3604,9 +4261,11 @@
     "category": "DeepTech",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3617,9 +4276,13 @@
     "address": "서울특별시 강남구 밤고개로1길 10, 1219호(수서동, 수서현대벤쳐빌)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3632,7 +4295,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3645,9 +4310,11 @@
     "category": "Bio/Health",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3658,9 +4325,13 @@
     "address": "서울특별시 영등포구 여의대로 108, 13층(여의도동, 파크원)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3671,9 +4342,13 @@
     "address": "서울특별시 영등포구 여의대방로 93-1, 지하1층(신길동, 국원빌딩)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3686,7 +4361,9 @@
     "category": "Platform",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3699,7 +4376,9 @@
     "category": "Bio/Health",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3712,7 +4391,9 @@
     "category": "DeepTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3725,7 +4406,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3736,9 +4419,13 @@
     "address": "서울특별시 종로구 새문안로 50(신문로2가)",
     "region": "서울",
     "category": "Finance",
-    "score": 30,
-    "investment_grade": "B",
-    "talent_signals": []
+    "score": 35,
+    "investment_grade": "A",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3751,9 +4438,11 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3764,9 +4453,13 @@
     "address": "서울특별시 동대문구 고산자로 505, 2층-제이17호(제기동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3779,7 +4472,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3792,7 +4487,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3805,7 +4502,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3818,7 +4517,9 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3829,9 +4530,13 @@
     "address": "서울특별시 노원구 동일로174길 27(공릉동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3842,9 +4547,13 @@
     "address": "서울특별시 강남구 언주로 432-10, 202호(역삼동)",
     "region": "서울",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3857,7 +4566,9 @@
     "category": "Platform",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3870,9 +4581,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3883,9 +4596,13 @@
     "address": "서울특별시 강남구 영동대로 602, 6층 제트270(삼성동, 삼성동 미켈란 107)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3898,9 +4615,11 @@
     "category": "Software",
     "score": 43,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3913,7 +4632,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3926,7 +4647,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3939,7 +4662,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3952,7 +4677,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3965,7 +4692,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3978,9 +4707,12 @@
     "category": "AI/ML",
     "score": 55,
     "investment_grade": "S",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -3993,7 +4725,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4006,7 +4740,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4019,7 +4755,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4032,7 +4770,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4045,7 +4785,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4058,7 +4800,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4069,9 +4813,13 @@
     "address": "서울특별시 중구 왕십리로 397, 1205호(신당동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4084,7 +4832,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4095,9 +4845,13 @@
     "address": "서울특별시 관악구 청룡4길 21, 901호(봉천동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4108,9 +4862,13 @@
     "address": "서울특별시 중구 청계천로 100, 11층 1146호(수표동, 시그니쳐타워)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4123,7 +4881,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4136,7 +4896,9 @@
     "category": "Data",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4149,7 +4911,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4162,7 +4926,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4175,9 +4941,12 @@
     "category": "AI/ML",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4190,7 +4959,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4203,7 +4974,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4214,9 +4987,13 @@
     "address": "부산광역시 해운대구 에이펙로 17, 1702호(우동, 센텀리더스마크)",
     "region": "부산",
     "category": "Software",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4229,7 +5006,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4242,7 +5021,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4255,7 +5036,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4268,7 +5051,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4281,7 +5066,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4294,9 +5081,11 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4307,9 +5096,13 @@
     "address": "대구광역시 북구 연경중앙로2길 14, 201호(연경동)",
     "region": "대구",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4322,7 +5115,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4333,9 +5128,13 @@
     "address": "광주광역시 광산구 하남산단7번로 42-11, 가동 1층(오선동)",
     "region": "광주",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4346,9 +5145,13 @@
     "address": "광주광역시 북구 오문로 234, 2층 201호(문흥동)",
     "region": "광주",
     "category": "Software",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4361,9 +5164,12 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4376,7 +5182,9 @@
     "category": "CleanTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4389,7 +5197,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4400,9 +5210,13 @@
     "address": "인천광역시 남동구 남동서로362번길 37-45(남촌동)",
     "region": "인천",
     "category": "AI/ML",
-    "score": 45,
+    "score": 50,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4413,9 +5227,13 @@
     "address": "인천광역시 서구 고산후로95번길 24, 401호(당하동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4428,7 +5246,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4439,9 +5259,13 @@
     "address": "인천광역시 연수구 송도국제대로 261, 206-305(송도동, 송도 더샵 센트럴시티)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4452,9 +5276,13 @@
     "address": "인천광역시 서구 고산후로95번길 24, 401호(당하동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4467,7 +5295,9 @@
     "category": "DeepTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4480,7 +5310,9 @@
     "category": "Bio/Health",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4493,7 +5325,9 @@
     "category": "AI/ML",
     "score": 48,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4504,9 +5338,13 @@
     "address": "대전광역시 서구 둔산로137번길 21, 8층(둔산동, 대승빌딩)",
     "region": "대전",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4519,7 +5357,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4532,7 +5372,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4545,7 +5387,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/6~3/12",
@@ -4558,9 +5402,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4573,9 +5419,11 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4588,7 +5436,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4601,7 +5451,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4614,9 +5466,11 @@
     "category": "Content/Media",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4629,9 +5483,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4644,7 +5500,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4657,7 +5515,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4668,9 +5528,13 @@
     "address": "서울특별시 송파구 중대로9길 35, 6층 제이-10호(가락동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4683,7 +5547,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4696,7 +5562,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4709,7 +5577,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4720,9 +5590,13 @@
     "address": "서울특별시 용산구 원효로90길 11, 102동 1204호(원효로1가, 용산더프라임)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4735,7 +5609,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4748,7 +5624,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4761,7 +5639,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4772,9 +5652,13 @@
     "address": "서울특별시 강남구 역삼로 215, 2층 비85호(역삼동, 남국빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4787,9 +5671,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4802,7 +5688,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4813,9 +5701,13 @@
     "address": "서울특별시 동작구 상도로 258-1, 3층 일부 367호(상도동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4828,7 +5720,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4839,9 +5733,13 @@
     "address": "서울특별시 강남구 강남대로112길 47, 2층-제이848호(논현동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4852,9 +5750,13 @@
     "address": "서울특별시 강남구 테헤란로 142, 5층(역삼동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4867,7 +5769,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4880,9 +5784,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4895,7 +5801,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4908,7 +5816,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4921,7 +5831,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4932,9 +5844,13 @@
     "address": "서울특별시 광진구 자양로18길 17, 3층 3022호(구의동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4945,9 +5861,13 @@
     "address": "서울특별시 금천구 가산디지털2로 169-16, 6층 오608호(가산동, 하우스디가산퍼스타)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4958,9 +5878,13 @@
     "address": "서울특별시 성동구 금호로 107, 105동 902호(금호동2가, 래미안하이리버)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4973,7 +5897,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4984,9 +5910,13 @@
     "address": "서울특별시 강남구 강남대로92길 31, 6층 6552호(역삼동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -4999,7 +5929,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5012,7 +5944,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5023,9 +5957,13 @@
     "address": "서울특별시 용산구 회나무로21길 17(이태원동)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5036,9 +5974,13 @@
     "address": "부산광역시 해운대구 마린시티2로 33, 비동 733호(우동, 해운대두산위브더제니스)",
     "region": "부산",
     "category": "DeepTech",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5051,7 +5993,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5062,9 +6006,13 @@
     "address": "부산광역시 동래구 명안로26번길 128, 제1층 제지하호(안락동)",
     "region": "부산",
     "category": "DeepTech",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5077,7 +6025,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5088,9 +6038,13 @@
     "address": "부산광역시 수영구 남천동로9번길 41, 403호(남천동, 인재빌딩)",
     "region": "부산",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5103,7 +6057,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5114,9 +6070,13 @@
     "address": "인천광역시 서구 크리스탈로74번길 7-21, 청라더블유 7층 701-나32호(청라동)",
     "region": "인천",
     "category": "AI/ML",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5129,9 +6089,11 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5144,7 +6106,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5157,7 +6121,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/13~3/19",
@@ -5170,7 +6136,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5181,9 +6149,13 @@
     "address": "서울특별시 강남구 역삼로 168, 서울 체인지업 그라운드 506호 수호로보틱스(역삼동)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5196,7 +6168,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5207,9 +6181,13 @@
     "address": "서울특별시 마포구 토정로 43-2(합정동, 블루젤로)",
     "region": "서울",
     "category": "Content/Media",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5222,9 +6200,11 @@
     "category": "AI/ML",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5237,7 +6217,9 @@
     "category": "CleanTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5250,7 +6232,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5261,9 +6245,13 @@
     "address": "서울특별시 강동구 풍성로 196, 101-1703(성내동, 둔촌역청구아파트)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5276,7 +6264,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5289,7 +6279,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5302,7 +6294,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5315,9 +6309,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5330,7 +6326,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5343,7 +6341,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5356,7 +6356,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5367,9 +6369,13 @@
     "address": "서울특별시 서초구 서초대로54길 48-7, 102호(서초동, 부림빌라)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5382,7 +6388,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5393,9 +6401,13 @@
     "address": "서울특별시 강남구 영동대로 617, 14층(삼성동, 찬이빌딩)",
     "region": "서울",
     "category": "Content/Media",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5408,9 +6420,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5423,7 +6437,9 @@
     "category": "Platform",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5436,7 +6452,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5449,9 +6467,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5462,9 +6482,13 @@
     "address": "서울특별시 동대문구 한천로26길 12-24(장안동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5475,9 +6499,13 @@
     "address": "서울특별시 서대문구 성산로 512-42, 이화여대 이룸센터 206호(대신동)",
     "region": "서울",
     "category": "Software",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5488,9 +6516,13 @@
     "address": "서울특별시 송파구 충민로 66, 영관 8090(문정동, 가든파이브라이프)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5503,7 +6535,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5516,7 +6550,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5529,7 +6565,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5542,9 +6580,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5557,9 +6597,11 @@
     "category": "Software",
     "score": 33,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5572,7 +6614,9 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5585,9 +6629,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5600,7 +6646,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5613,7 +6661,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5626,9 +6676,12 @@
     "category": "Platform",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5641,7 +6694,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5654,7 +6709,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5667,7 +6724,9 @@
     "category": "Content/Media",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5678,9 +6737,13 @@
     "address": "서울특별시 금천구 가산디지털2로 165, 206호(가산동, 백상스타타워2차)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5693,7 +6756,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5706,7 +6771,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5719,7 +6786,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5730,9 +6799,13 @@
     "address": "서울특별시 동대문구 천호대로85길 14, 702호(장안동, 이화빌딩)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5743,9 +6816,13 @@
     "address": "서울특별시 구로구 디지털로34길 55, 1106호(구로동, 코오롱싸이언스밸리2차)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5758,7 +6835,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5771,7 +6850,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5784,7 +6865,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5795,9 +6878,13 @@
     "address": "서울특별시 관악구 남부순환로 1921-1, 401 - 에이17호(봉천동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5810,7 +6897,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5821,9 +6910,13 @@
     "address": "서울특별시 송파구 중대로9길 35, 6층-제이9호(가락동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5836,7 +6929,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5849,7 +6944,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5860,9 +6957,13 @@
     "address": "서울특별시 구로구 디지털로31길 38-21, 602호(구로동, 이앤씨벤처드림타워3차)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5875,7 +6976,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5888,7 +6991,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5901,9 +7006,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5916,9 +7023,12 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5929,9 +7039,13 @@
     "address": "서울특별시 송파구 오금로 111, 901-2-1호(방이동, 세기빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5942,9 +7056,13 @@
     "address": "서울특별시 동대문구 한천로26길 12-24(장안동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5957,7 +7075,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5970,7 +7090,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5983,7 +7105,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -5996,7 +7120,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6007,9 +7133,13 @@
     "address": "부산광역시 부산진구 서전로 8, 6층 118호(부전동)",
     "region": "부산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6020,9 +7150,13 @@
     "address": "부산광역시 강서구 명지국제2로 41, 303동 1603호(명지동, 더샵 명지퍼스트월드 3단지)",
     "region": "부산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6035,7 +7169,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6048,7 +7184,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6061,9 +7199,12 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6076,7 +7217,9 @@
     "category": "DeepTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6089,7 +7232,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6102,7 +7247,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6113,9 +7260,13 @@
     "address": "대구광역시 중구 명덕로 179, 2층 202-제이199호(남산동)",
     "region": "대구",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6128,7 +7279,9 @@
     "category": "DeepTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6141,7 +7294,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6152,9 +7307,13 @@
     "address": "광주광역시 서구 상무대로 1032, 905호(화정동)",
     "region": "광주",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6167,7 +7326,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6180,7 +7341,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6191,9 +7354,13 @@
     "address": "인천광역시 서구 봉수대로 166, 1동313호(가좌동)",
     "region": "인천",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6204,9 +7371,13 @@
     "address": "인천광역시 연수구 하모니로178번길 22, 7층 707-82호(송도동)",
     "region": "인천",
     "category": "AI/ML",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6217,9 +7388,13 @@
     "address": "인천광역시 연수구 인천타워대로54번길 3, 5층 104호(송도동, 메트로프라자)",
     "region": "인천",
     "category": "Bio/Health",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6232,7 +7407,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6245,7 +7422,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6258,7 +7437,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6271,7 +7452,9 @@
     "category": "Software",
     "score": 38,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6284,7 +7467,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6297,9 +7482,11 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6312,7 +7499,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6325,7 +7514,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6336,9 +7527,13 @@
     "address": "인천광역시 연수구 하모니로 158, 디동 3층 317-케이16호(송도동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6351,7 +7546,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6362,9 +7559,13 @@
     "address": "대전광역시 서구 탄방로 131, 201동 1303호(용문동, 둔산더샵엘리프)",
     "region": "대전",
     "category": "Content/Media",
-    "score": 38,
+    "score": 43,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6377,9 +7578,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6392,7 +7595,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6405,7 +7610,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/20~3/26",
@@ -6418,7 +7625,9 @@
     "category": "Platform",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6431,9 +7640,11 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6446,7 +7657,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6459,7 +7672,9 @@
     "category": "Finance",
     "score": 38,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6472,7 +7687,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6485,7 +7702,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6496,9 +7715,13 @@
     "address": "서울특별시 강남구 테헤란로77길 11-15, 405호(삼성동)",
     "region": "서울",
     "category": "Bio/Health",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6511,7 +7734,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6522,9 +7747,13 @@
     "address": "서울특별시 성북구 월계로36길 27, 105동 501호(장위동)",
     "region": "서울",
     "category": "Data",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6537,7 +7766,9 @@
     "category": "Finance",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6550,7 +7781,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6563,7 +7796,9 @@
     "category": "Other",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6574,9 +7809,13 @@
     "address": "서울특별시 서초구 사임당로8길 13, 4층 402-382에이호(서초동)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6589,7 +7828,9 @@
     "category": "CleanTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6602,7 +7843,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6615,7 +7858,9 @@
     "category": "Finance",
     "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6628,7 +7873,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6639,9 +7886,13 @@
     "address": "서울특별시 금천구 디지털로9길 46, 207호(가산동, 이앤씨드림타워7차)",
     "region": "서울",
     "category": "Other",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6654,7 +7905,9 @@
     "category": "CleanTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6667,7 +7920,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6678,9 +7933,13 @@
     "address": "서울특별시 종로구 세종대로 149, 20층 2299호 (세종로, 광화문빌딩)",
     "region": "서울",
     "category": "CleanTech",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6693,7 +7952,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6706,7 +7967,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6719,9 +7982,11 @@
     "category": "Other",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6734,9 +7999,11 @@
     "category": "Bio/Health",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6749,9 +8016,11 @@
     "category": "Other",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6764,7 +8033,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6777,9 +8048,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6792,7 +8065,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6805,7 +8080,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6818,7 +8095,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6831,7 +8110,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6844,9 +8125,12 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6859,7 +8143,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6870,9 +8156,13 @@
     "address": "서울특별시 마포구 마포대로 92, 에이동 3층(공덕동, 효성해링턴스퀘어)",
     "region": "서울",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6885,7 +8175,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6898,7 +8190,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6911,7 +8205,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6924,7 +8220,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6937,7 +8235,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6948,9 +8248,13 @@
     "address": "서울특별시 서초구 매헌로 16, 3층 344호 알01(양재동, 하이브랜드)",
     "region": "서울",
     "category": "Platform",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6961,9 +8265,13 @@
     "address": "서울특별시 관악구 쑥고개로 101-4, 706호(봉천동, 제일캠퍼스텔)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6976,7 +8284,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -6989,9 +8299,12 @@
     "category": "Software",
     "score": 33,
     "investment_grade": "B",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7002,9 +8315,13 @@
     "address": "서울특별시 강남구 강남대로114길 18, 478호(논현동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7017,7 +8334,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7028,9 +8347,13 @@
     "address": "서울특별시 강남구 테헤란로2길 27, 12층 1223호(역삼동, 비전타워)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7043,7 +8366,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7056,7 +8381,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7069,7 +8396,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7082,7 +8411,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7095,7 +8426,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7108,7 +8441,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7119,9 +8454,13 @@
     "address": "서울특별시 서초구 사임당로8길 13, 4층 402-엘846호(서초동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7132,9 +8471,13 @@
     "address": "서울특별시 강남구 강남대로112길 47, 2층-제이860호(논현동)",
     "region": "서울",
     "category": "Software",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7147,7 +8490,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7160,7 +8505,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7171,9 +8518,13 @@
     "address": "서울특별시 영등포구 영등포로 150, 제6층 제비607호(당산동1가, 생각공장 당산)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7186,7 +8537,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7199,7 +8552,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7212,7 +8567,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7225,7 +8582,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7238,7 +8597,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7249,9 +8610,13 @@
     "address": "서울특별시 종로구 창경궁로 240-18, 지하1층(명륜4가)",
     "region": "서울",
     "category": "Content/Media",
-    "score": 28,
+    "score": 33,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7264,7 +8629,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7275,9 +8642,13 @@
     "address": "서울특별시 송파구 백제고분로 446, 3층 3011호(방이동, 송암빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7290,7 +8661,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7303,9 +8676,12 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7318,7 +8694,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7331,7 +8709,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7344,7 +8724,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7357,7 +8739,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7368,9 +8752,13 @@
     "address": "서울특별시 강서구 공항대로 525, 1501 가-348호(등촌동, 비원오피스텔)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7383,9 +8771,12 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": true,
     "talent_signals": [
+      "연쇄창업가(다중법인 설립)",
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7398,9 +8789,11 @@
     "category": "AI/ML",
     "score": 50,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7413,7 +8806,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7426,9 +8821,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7441,7 +8838,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7454,7 +8853,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7467,7 +8868,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7480,7 +8883,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7493,7 +8898,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7506,7 +8913,9 @@
     "category": "Content/Media",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7519,7 +8928,9 @@
     "category": "Platform",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7532,9 +8943,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7547,7 +8960,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7560,7 +8975,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7573,7 +8990,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7586,7 +9005,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7597,9 +9018,13 @@
     "address": "서울특별시 서초구 서초대로46길 109, 6층(서초동, 지산빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7612,7 +9037,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7625,7 +9052,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7638,7 +9067,9 @@
     "category": "Software",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7651,7 +9082,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7664,7 +9097,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7675,9 +9110,13 @@
     "address": "서울특별시 성동구 아차산로17길 48, 908호(성수동2가)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7688,9 +9127,13 @@
     "address": "서울특별시 영등포구 국회대로38길 8, 4층 403호 에이동-324호(당산동3가)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7703,7 +9146,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7716,7 +9161,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7727,9 +9174,13 @@
     "address": "서울특별시 강동구 양재대로 1566, 6층 비-15호(명일동, 죽애빌딩)",
     "region": "서울",
     "category": "Platform",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7742,7 +9193,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7755,7 +9208,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7768,7 +9223,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7781,7 +9238,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7792,9 +9251,13 @@
     "address": "서울특별시 강남구 영동대로 602, 602,6층 디84(삼성동, 삼성동 미켈란 107)",
     "region": "서울",
     "category": "Software",
-    "score": 38,
+    "score": 43,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7807,7 +9270,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7820,9 +9285,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7835,7 +9302,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7846,9 +9315,13 @@
     "address": "서울특별시 강남구 선릉로 529, 5층 5301호(역삼동, 함양재빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7861,7 +9334,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7874,7 +9349,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7887,7 +9364,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7900,7 +9379,9 @@
     "category": "Platform",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7913,9 +9394,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7928,7 +9411,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7941,7 +9426,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7954,7 +9441,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7967,7 +9456,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7978,9 +9469,13 @@
     "address": "서울특별시 강남구 봉은사로 129, 7층 727호 에이135호(논현동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -7993,7 +9488,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8006,7 +9503,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8019,7 +9518,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8032,7 +9533,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8045,7 +9548,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8058,7 +9563,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8071,9 +9578,11 @@
     "category": "Software",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8084,9 +9593,13 @@
     "address": "서울특별시 금천구 가산디지털2로 165, 1407-2(가산동, 백상스타2차)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8099,7 +9612,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8112,7 +9627,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8125,7 +9642,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8136,9 +9655,13 @@
     "address": "서울특별시 영등포구 양평로 24, 5층 501호(당산동6가, 수정빌딩)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8151,7 +9674,9 @@
     "category": "Blockchain/Fintech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8164,7 +9689,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8175,9 +9702,13 @@
     "address": "서울특별시 구로구 디지털로29길 38, 201-에이 08호(구로동, 에이스테크노타워3)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8190,7 +9721,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8203,7 +9736,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8214,9 +9749,13 @@
     "address": "서울특별시 마포구 서강로 121, 2층 202-57(노고산동, 맹그로브 신촌)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8227,9 +9766,13 @@
     "address": "서울특별시 양천구 신정로13길 35, 105동 513호(신정동, 수정아파트)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8240,9 +9783,13 @@
     "address": "서울특별시 도봉구 노해로69길 15-15, 402호(창동, 점보타운)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8255,7 +9802,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8268,7 +9817,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8281,7 +9832,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8292,9 +9845,13 @@
     "address": "서울특별시 강남구 강남대로112길 47, 2층-634에이호(논현동)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 40,
-    "investment_grade": "A",
-    "talent_signals": []
+    "score": 45,
+    "investment_grade": "S",
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8307,7 +9864,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8320,7 +9879,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8333,7 +9894,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8346,7 +9909,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8357,9 +9922,13 @@
     "address": "서울특별시 서초구 강남대로95길 47-4, 지하1층(잠원동, 아성빌딩)",
     "region": "서울",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8372,7 +9941,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8385,7 +9956,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8398,7 +9971,9 @@
     "category": "Data",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8411,9 +9986,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8426,7 +10003,9 @@
     "category": "Platform",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8437,9 +10016,13 @@
     "address": "서울특별시 송파구 법원로4길 10, 제지 1층 제비 110 제이310(문정동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8450,9 +10033,13 @@
     "address": "서울특별시 서초구 효령로31길 28, 3층-제이12호(방배동)",
     "region": "서울",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8465,7 +10052,9 @@
     "category": "Other",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8476,9 +10065,13 @@
     "address": "부산광역시 기장군 기장읍 대변로 154, 2층 208호",
     "region": "부산",
     "category": "Other",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8491,7 +10084,9 @@
     "category": "Platform",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8504,7 +10099,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8515,9 +10112,13 @@
     "address": "부산광역시 북구 만덕대로 21, 10층 10-1호(덕천동, 션샤인빌딩)",
     "region": "부산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8530,9 +10131,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8543,9 +10146,13 @@
     "address": "부산광역시 해운대구 반여로 96, 2층(반여동)",
     "region": "부산",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8556,9 +10163,13 @@
     "address": "부산광역시 해운대구 마린시티2로 38, 주2동 1602호(우동, 해운대아이파크)",
     "region": "부산",
     "category": "AI/ML",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8571,7 +10182,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8584,7 +10197,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8597,9 +10212,11 @@
     "category": "AI/ML",
     "score": 45,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "딥테크 고도기술"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8610,9 +10227,13 @@
     "address": "대구광역시 북구 팔거천동로 217, 602-19호(동천동)",
     "region": "대구",
     "category": "AI/ML",
-    "score": 38,
+    "score": 43,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8625,9 +10246,11 @@
     "category": "AI/ML",
     "score": 30,
     "investment_grade": "B",
+    "is_serial_founder": false,
     "talent_signals": [
       "캠퍼스/연구소/테크허브"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8640,7 +10263,9 @@
     "category": "CleanTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8653,7 +10278,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8666,7 +10293,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8679,7 +10308,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8692,7 +10323,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8705,7 +10338,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8718,7 +10353,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8731,7 +10368,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8742,9 +10381,13 @@
     "address": "광주광역시 광산구 송정로1번길 86, 2층 2호(송정동)",
     "region": "광주",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8757,7 +10400,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8770,7 +10415,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8783,7 +10430,9 @@
     "category": "Content/Media",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8796,7 +10445,9 @@
     "category": "Bio/Health",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8807,9 +10458,13 @@
     "address": "인천광역시 부평구 주부토로 236, 에이동 217호(갈산동, 인천테크노밸리유1센터)",
     "region": "인천",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8822,7 +10477,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8835,7 +10492,9 @@
     "category": "Software",
     "score": 28,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8848,7 +10507,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8859,9 +10520,13 @@
     "address": "인천광역시 연수구 컨벤시아대로 81, 5층 509-216에이호(송도동, 드림시티)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8874,9 +10539,11 @@
     "category": "AI/ML",
     "score": 58,
     "investment_grade": "S",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8887,9 +10554,13 @@
     "address": "인천광역시 중구 공항로424번길 72, 922호(운서동, 아이비씨디오빌)",
     "region": "인천",
     "category": "AI/ML",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8902,7 +10573,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8913,9 +10586,13 @@
     "address": "인천광역시 부평구 대정로 66, 4층 408-310호(부평동, 다운타운일레븐)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8928,7 +10605,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8939,9 +10618,13 @@
     "address": "인천광역시 서구 완정로 23, 203호(마전동, 덕안빌딩)",
     "region": "인천",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8954,7 +10637,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8967,7 +10652,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8978,9 +10665,13 @@
     "address": "인천광역시 서구 고산후로95번길 24, 401호(당하동)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -8993,9 +10684,11 @@
     "category": "Software",
     "score": 40,
     "investment_grade": "A",
+    "is_serial_founder": false,
     "talent_signals": [
       "Day-1 기관투자 가능성(고도자본)"
-    ]
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9008,7 +10701,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9021,7 +10716,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9032,9 +10729,13 @@
     "address": "인천광역시 중구 하늘별빛로65번길 7-15, 7층 702-씨14호(중산동, 디에스지타워)",
     "region": "인천",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9045,9 +10746,13 @@
     "address": "대전광역시 서구 둔지로 50, 4층 401호(둔산동, 둔산탑클래스)",
     "region": "대전",
     "category": "Bio/Health",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9058,9 +10763,13 @@
     "address": "대전광역시 유성구 장대로 106, 2층-185에이호(장대동)",
     "region": "대전",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9071,9 +10780,13 @@
     "address": "대전광역시 서구 계룡로 566, 4층 제이39호(괴정동)",
     "region": "대전",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9086,7 +10799,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9099,7 +10814,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9112,7 +10829,9 @@
     "category": "Software",
     "score": 38,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9123,9 +10842,13 @@
     "address": "대전광역시 유성구 장대로 106, 2층-178에이호(장대동)",
     "region": "대전",
     "category": "Software",
-    "score": 25,
+    "score": 30,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9138,7 +10861,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9151,7 +10876,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9164,7 +10891,9 @@
     "category": "AI/ML",
     "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9175,9 +10904,13 @@
     "address": "대전광역시 동구 대전로 866, 1층(삼성동)",
     "region": "대전",
     "category": "Software",
-    "score": 35,
+    "score": 40,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": true,
+    "talent_signals": [
+      "연쇄창업가(다중법인 설립)"
+    ],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9190,7 +10923,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9203,7 +10938,9 @@
     "category": "Other",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9216,7 +10953,9 @@
     "category": "AI/ML",
     "score": 35,
     "investment_grade": "A",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9229,7 +10968,9 @@
     "category": "AI/ML",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9242,7 +10983,9 @@
     "category": "DeepTech",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9255,7 +10998,9 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   },
   {
     "period": "3/27~4/2",
@@ -9268,6 +11013,8 @@
     "category": "Software",
     "score": 25,
     "investment_grade": "B",
-    "talent_signals": []
+    "is_serial_founder": false,
+    "talent_signals": [],
+    "llm_tag": null
   }
 ]
