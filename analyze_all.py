@@ -8,7 +8,17 @@ import os
 import urllib.request
 import urllib.parse
 import html as html_lib
+import time
+from datetime import datetime, timedelta
 from collections import defaultdict
+try:
+    import requests
+except ImportError:
+    requests = None
+try:
+    import whois as python_whois
+except ImportError:
+    python_whois = None
 
 CACHE_FILE = 'data/llm_cache.json'
 try:
@@ -25,6 +35,8 @@ if os.environ.get("OPENAI_API_KEY"):
         is_openai_ready = True
     except ImportError:
         pass
+
+KIPRIS_API_KEY = os.environ.get("KIPRIS_API_KEY")
 
 def get_llm_tag(business_desc):
     if not is_openai_ready:
@@ -91,6 +103,140 @@ def get_lp_teaser(name, business_desc, llm_tag):
         return draft
     except Exception as e:
         return None
+
+
+def get_dd_questions(name, business_desc, llm_tag, patent_info=None):
+    """Generate 5 sharp DD questions tailored to the startup's specific technology."""
+    if not is_openai_ready: return None
+    cache_key = f"ddq_{name}_{business_desc}"
+    if cache_key in llm_cache: return llm_cache[cache_key]
+
+    context_extra = f"\nPatent Info: {patent_info}" if patent_info else ""
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a sharp Korean early-stage VC analyst conducting preliminary due diligence. Based on the startup's business description and tech tag, generate EXACTLY 5 concise, highly specific due-diligence questions in KOREAN. Each question should probe a critical unknown: technology differentiation, go-to-market strategy, team background, key risks, or competitive moat. Number them 1-5. No preamble, just the questions."},
+                {"role": "user", "content": f"Company: {name}\nTag: {llm_tag}\nBusiness: {business_desc}{context_extra}"}
+            ],
+            temperature=0.4,
+            max_tokens=400
+        )
+        questions = response.choices[0].message.content.strip()
+        llm_cache[cache_key] = questions
+        return questions
+    except Exception as e:
+        return None
+
+
+def get_kipris_patent(company_name, ceo_name=''):
+    """Query KIPRIS Plus Open API for patents filed by this company or CEO."""
+    if not KIPRIS_API_KEY:
+        return None
+    cache_key = f"kipris_{company_name}"
+    if cache_key in llm_cache:
+        return llm_cache[cache_key]
+
+    result = None
+    try:
+        # Search by applicant (company name)
+        url = "http://plus.kipris.or.kr/openapi/rest/patUtiModInfoSearchSevice/applicantNameAllInfoSearch"
+        params = {
+            "applicant": company_name,
+            "accessKey": KIPRIS_API_KEY,
+            "numOfRows": 3,
+            "pageNo": 1,
+            "patent": "true",
+            "utility": "true",
+        }
+        resp = requests.get(url, params=params, timeout=8)
+        resp.raise_for_status()
+
+        # Parse XML for patent titles
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(resp.text)
+        items = root.findall('.//item')
+
+        patents = []
+        for item in items[:3]:
+            title = item.findtext('inventionTitle') or item.findtext('inventionName') or ''
+            app_no = item.findtext('applicationNumber') or ''
+            date = item.findtext('applicationDate') or ''
+            if title:
+                patents.append(f"{title} ({date[:4] if date else '?'}년)")
+
+        if patents:
+            result = ' | '.join(patents)
+            print(f"  [KIPRIS] ✓ {company_name}: {len(patents)}건 특허 발견")
+
+        # Also search by CEO name if company returned nothing
+        if not result and ceo_name:
+            params['applicant'] = ceo_name
+            resp2 = requests.get(url, params=params, timeout=8)
+            root2 = ET.fromstring(resp2.text)
+            items2 = root2.findall('.//item')
+            for item in items2[:3]:
+                title = item.findtext('inventionTitle') or item.findtext('inventionName') or ''
+                date = item.findtext('applicationDate') or ''
+                if title:
+                    patents.append(f"{title} (대표자 특허, {date[:4] if date else '?'}년)")
+            if patents:
+                result = ' | '.join(patents)
+                print(f"  [KIPRIS] ✓ {ceo_name} (대표): {len(patents)}건 특허 발견")
+
+    except Exception as e:
+        print(f"  [KIPRIS] {company_name}: {e}")
+
+    llm_cache[cache_key] = result
+    return result
+
+
+def get_domain_signal(company_name, incorporation_period):
+    """Check if a .co.kr or .com domain was registered near the incorporation date.
+    Returns a signal string if domain was registered within ~30 days of incorporation.
+    """
+    if not python_whois:
+        return None
+    cache_key = f"whois_{company_name}"
+    if cache_key in llm_cache:
+        return llm_cache[cache_key]
+
+    # Build candidate domain names from the company name
+    # Korean company names → romanize heuristically by removing special chars
+    # This is approximate — just catch obvious matches
+    clean = re.sub(r'[^a-zA-Z0-9가-힣]', '', company_name)
+    # Try English-looking substrings
+    eng = re.sub(r'[^a-zA-Z0-9]', '', company_name).lower()
+    candidates = []
+    if eng and len(eng) >= 3:
+        candidates += [f"{eng}.com", f"{eng}.co.kr", f"{eng}.io", f"{eng}.ai"]
+
+    result = None
+    for domain in candidates[:3]:
+        try:
+            w = python_whois.whois(domain)
+            creation_date = w.creation_date
+            if isinstance(creation_date, list):
+                creation_date = creation_date[0]
+            if creation_date:
+                # Parse incorporation period to approximate date
+                # period format: "M/D~M/D" → use the start date, assume year 2026
+                m = re.search(r'^(\d{1,2})/(\d{1,2})', incorporation_period or '')
+                if m:
+                    inc_month, inc_day = int(m.group(1)), int(m.group(2))
+                    inc_date = datetime(2026, inc_month, inc_day)
+                    if isinstance(creation_date, datetime):
+                        delta = abs((creation_date - inc_date).days)
+                        if delta <= 45:  # registered within 45 days of incorporation
+                            result = f"{domain} (등록일: {creation_date.strftime('%Y-%m-%d')}, 법인설립 {delta}일 차이)"
+                            print(f"  [WHOIS] ✓ 도메인 신호: {result}")
+                            break
+        except Exception:
+            continue
+        time.sleep(0.3)  # Rate limit
+
+    llm_cache[cache_key] = result
+    return result
 
 
 def get_naver_osint_snippet(company_name, ceo_name=''):
@@ -378,27 +524,46 @@ def main():
                 c['talent_signals'] = signals
                 if score >= 35:
                     c['llm_tag'] = get_llm_tag(c['business'])
-                    # Enrich with OSINT (Naver scrape) for all A/S targets
+                    # KIPRIS Patent Intelligence
+                    patent = get_kipris_patent(c['name'], c.get('ceo', ''))
+                    c['patent_info'] = patent
+                    if patent:
+                        # Patent found = significant score boost (deep-tech signal)
+                        c['score'] = score = min(score + 15, 100)
+                        c['talent_signals'] = signals = list(signals) + ['특허 등록 확인']
+                        # Re-evaluate grade after boost
+                        if '국가 핵심 인큐베이터 / 대학 연구소 스핀오프' not in signals:
+                            c['talent_signals'].append('Σ IP 자산 보유')
+                    # Domain WHOIS check
+                    domain_signal = get_domain_signal(c['name'], period)
+                    c['domain_signal'] = domain_signal
+                    if domain_signal and domain_signal not in (signals or []):
+                        c['talent_signals'] = list(c.get('talent_signals', signals)) + ['도메인 동시 등록 (D+0 신호)']
+                    # OSINT snippet (DuckDuckGo)
                     osint = get_naver_osint_snippet(c['name'], c.get('ceo', ''))
                     c['osint_snippet'] = osint
-                    if osint:
-                        print(f"  [OSINT] ✓ {c['name']}: {osint[:60]}...")
-                    # Generate Outreach Draft for elite prospects
+                    # Generate Outreach Draft + LP Teaser + DD Questions for elite prospects
                     if score >= 40:
-                        # Pass enriched context to GPT for better draft
                         enriched_biz = c['business']
+                        if patent:
+                            enriched_biz += f" [특허: {patent[:120]}]"
                         if osint:
-                            enriched_biz += f" [외부 정보: {osint[:120]}]"
+                            enriched_biz += f" [외부정보: {osint[:80]}]"
                         c['outreach_draft'] = get_outreach_draft(c['name'], enriched_biz, c['llm_tag'])
                         c['lp_teaser'] = get_lp_teaser(c['name'], enriched_biz, c['llm_tag'])
+                        c['dd_questions'] = get_dd_questions(c['name'], c['business'], c['llm_tag'], patent)
                     else:
                         c['outreach_draft'] = None
                         c['lp_teaser'] = None
+                        c['dd_questions'] = None
                 else:
                     c['llm_tag'] = None
+                    c['patent_info'] = None
+                    c['domain_signal'] = None
                     c['osint_snippet'] = None
                     c['outreach_draft'] = None
                     c['lp_teaser'] = None
+                    c['dd_questions'] = None
                 startups.append(c)
 
         by_cat = defaultdict(list)
@@ -495,9 +660,12 @@ def main():
                 'investment_grade': grade,
                 'talent_signals': s.get('talent_signals', []),
                 'llm_tag': s.get('llm_tag', None),
+                'patent_info': s.get('patent_info', None),
+                'domain_signal': s.get('domain_signal', None),
                 'osint_snippet': s.get('osint_snippet', None),
                 'outreach_draft': s.get('outreach_draft', None),
-                'lp_teaser': s.get('lp_teaser', None)
+                'lp_teaser': s.get('lp_teaser', None),
+                'dd_questions': s.get('dd_questions', None),
             })
 
     with open('data/startups_all_weeks.json', 'w', encoding='utf-8') as f:

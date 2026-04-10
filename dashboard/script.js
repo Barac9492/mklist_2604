@@ -335,7 +335,7 @@ function renderTable() {
         if (isStarred) {
             const wData = watchlist[item.name];
             crmControls = `
-                <div class="crm-controls" style="margin-top:6px; background:rgba(0,0,0,0.2); padding:6px; border-radius:6px; font-size:12px; display:flex; gap:6px; align-items:center;">
+                <div class="crm-controls" style="margin-top:6px; background:rgba(0,0,0,0.2); padding:6px; border-radius:6px; font-size:12px; display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
                     <select onchange="updateWatchlistStatus('${safeName}', this.value)" style="background:#1a1d2e; color:#fff; border:1px solid #333; border-radius:4px; padding:2px 4px; font-size:11px;">
                         <option value="Scouted" ${wData.status === 'Scouted' ? 'selected' : ''}>🔍 Scouted</option>
                         <option value="Contacted" ${wData.status === 'Contacted' ? 'selected' : ''}>✉️ Contacted</option>
@@ -345,18 +345,35 @@ function renderTable() {
                     <button onclick="editWatchlistNote('${safeName}')" style="background:#1a1d2e; color:#00d2ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">📝 Memo</button>
                     ${item.outreach_draft ? `<button onclick="showEmailDraft('${encodeURIComponent(item.outreach_draft)}')" style="background:#1a1d2e; color:#f1a5ff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">✉️ Email</button>` : ''}
                     ${item.lp_teaser ? `<button onclick="showLPTeaser('${encodeURIComponent(item.lp_teaser)}')" style="background:#1a1d2e; color:#ffdd57; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">🌐 LP (EN)</button>` : ''}
+                    ${item.dd_questions ? `<button onclick="showDDQuestions('${encodeURIComponent(item.dd_questions)}', '${safeName}')" style="background:#1a1d2e; color:#57e89a; border:1px solid #2a7a4a; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">🎤 DD</button>` : ''}
                     <button onclick="showLookalikes('${safeName}')" style="background:#1a1d2e; color:#fff; border:1px solid #333; border-radius:4px; padding:2px 6px; cursor:pointer; font-size:11px; outline:none;">👯 Twins</button>
                     <span style="color:#adb5bd; font-family:serif; font-style:italic; max-width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${wData.note}">${wData.note || 'No notes...'}</span>
                 </div>
             `;
         }
         
+        // Intel link buttons row
+        const ceoSlug = (item.ceo || '').replace(/\s+/g, '+');
         const intelLinks = `<span class="intel-links">
             <a href="https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(item.name + ' ' + (item.ceo || ''))}" target="_blank" class="intel-btn li" title="LinkedIn 검색">in</a>
             <a href="https://search.naver.com/search.naver?query=${encodeURIComponent(item.name + ' 스타트업')}" target="_blank" class="intel-btn nv" title="Naver 검색">N</a>
             <a href="http://kpat.kipris.or.kr/kpat/searchLogina.do?next=MainSearch#page1?keyword=${encodeURIComponent(item.name)}" onclick="navigator.clipboard.writeText('${item.name}')" target="_blank" class="intel-btn kp" title="특허 검색 (클릭 시 이름 복사됨)" style="background:#4CAF50; color:#fff; border-color:#388E3C;">⚖️</a>
+            <a href="https://github.com/search?q=${encodeURIComponent(item.ceo || item.name)}&type=users" target="_blank" class="intel-btn gh" title="CEO GitHub 프로필 검색" style="background:rgba(255,255,255,0.05); border-color:#555; color:#ccc;">&lt;/&gt;</a>
             <a href="https://www.google.com/search?q=${encodeURIComponent('"' + item.ceo + '" AND ("횡령" OR "배임" OR "파산" OR "임금체불" OR "사기")')}" target="_blank" class="intel-btn red" title="Red-Flag 창업자 검증" style="background:transparent; border-color:#ff4444; color:#ff4444;">🚨</a>
         </span>`;
+        
+        // Patent badge (if KIPRIS data found)
+        let patentBadge = '';
+        if (item.patent_info) {
+            const safePatent = item.patent_info.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+            patentBadge = `<br><span class="tag-patent" title="KIPRIS 특허: ${safePatent}">📜 특허: ${item.patent_info.substring(0, 40)}${item.patent_info.length > 40 ? '...' : ''}</span>`;
+        }
+        // Domain signal badge
+        let domainBadge = '';
+        if (item.domain_signal) {
+            const safeDomain = item.domain_signal.replace(/"/g, '&quot;');
+            domainBadge = `<br><span class="tag-domain" title="도메인: ${safeDomain}">🌐 ${item.domain_signal.split(' ')[0]}</span>`;
+        }
         
         let aiTag = '';
         if (item.llm_tag) {
@@ -382,9 +399,9 @@ function renderTable() {
                 </div>
                 ${crmControls}
             </td>
-            <td><span class="tag-category">${item.category || '-'}</span>${aiTag}${osintTag}</td>
+            <td><span class="tag-category">${item.category || '-'}</span>${aiTag}${patentBadge}${domainBadge}${osintTag}</td>
             <td style="color:#adb5bd">${capDisplay}</td>
-            <td><span class="biz-desc" title="${item.business}">${item.business}</span></td>
+            <td><span class="biz-desc" title="${item.business} | 📍 ${item.address || ''}">${item.business}</span></td>
             <td style="color:#adb5bd;font-size:13px;">${item.period}</td>
         `;
         tbody.appendChild(tr);
@@ -773,6 +790,58 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 let _tfidfVectors = null;
+
+function showDDQuestions(encodedQuestions, companyName) {
+    const questions = decodeURIComponent(encodedQuestions);
+    const modalTitle = document.querySelector('#emailModal h3');
+    modalTitle.textContent = `🎤 Due Diligence Questions — "${companyName}"`;
+
+    const textarea = document.getElementById('emailDraftContent');
+    textarea.style.display = 'none';
+
+    const copyBtn = document.getElementById('copyEmailBtn');
+    if (copyBtn) copyBtn.style.display = 'none';
+
+    let visualDiv = document.getElementById('twinVisualDiv');
+    if (!visualDiv) {
+        visualDiv = document.createElement('div');
+        visualDiv.id = 'twinVisualDiv';
+        textarea.parentNode.insertBefore(visualDiv, textarea);
+    }
+    visualDiv.style.display = 'block';
+
+    // Parse numbered questions
+    const lines = questions.split('\n').filter(l => l.trim());
+    let html = `
+        <div style="margin-bottom:14px; padding:10px; background:rgba(87,232,154,0.08); border:1px solid rgba(87,232,154,0.2); border-radius:8px; font-size:12px; color:#57e89a;">
+            💡 아래 질문들은 이 스타트업의 사업 설명과 기술 태그를 기반으로 AI가 자동 생성한 <strong>초기 투자 검토용 DD 질문</strong>입니다.
+        </div>
+    `;
+    
+    lines.forEach((line, i) => {
+        const clean = line.replace(/^\d+\.\s*/, '').trim();
+        if (!clean) return;
+        const num = line.match(/^(\d+)\./)?.[1] || (i + 1);
+        const colors = ['#00d2ff', '#3a86ff', '#8338ec', '#ff006e', '#fb5607'];
+        const color = colors[(num - 1) % colors.length];
+        html += `
+            <div style="display:flex; gap:12px; margin-bottom:10px; padding:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; transition:border-color 0.2s; cursor:default;"
+                 onmouseover="this.style.borderColor='rgba(0,210,255,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                <div style="width:28px; height:28px; min-width:28px; border-radius:50%; background:${color}; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px; color:#fff;">${num}</div>
+                <div style="font-size:14px; color:#f0f0f0; line-height:1.6; padding-top:2px;">${clean}</div>
+            </div>
+        `;
+    });
+
+    html += `
+        <div style="text-align:right; margin-top:14px;">
+            <button onclick="navigator.clipboard.writeText(decodeURIComponent('${encodedQuestions}')).then(() => alert('질문이 복사되었습니다!'))" style="background:rgba(87,232,154,0.1); color:#57e89a; border:1px solid rgba(87,232,154,0.3); border-radius:6px; padding:6px 14px; cursor:pointer; font-size:12px; font-weight:600;">📋 전체 복사</button>
+        </div>
+    `;
+
+    visualDiv.innerHTML = html;
+    document.getElementById('emailModal').style.display = 'flex';
+}
 
 function showLookalikes(targetName) {
     // Lazy-build vectors once

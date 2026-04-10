@@ -455,3 +455,53 @@ a.rank-biz-name:hover {
     border-color: rgba(0, 200, 120, 0.6);
     box-shadow: 0 0 8px rgba(0, 200, 120, 0.2);
 }
+
+/* Patent Intel Tag */
+.tag-patent {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, rgba(255, 200, 50, 0.12), rgba(255, 160, 0, 0.08));
+    border: 1px solid rgba(255, 200, 50, 0.35);
+    color: #ffd166;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 4px;
+    cursor: help;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 240px;
+    transition: all 0.2s;
+}
+.tag-patent:hover {
+    background: linear-gradient(135deg, rgba(255, 200, 50, 0.25), rgba(255, 160, 0, 0.18));
+    border-color: rgba(255, 200, 50, 0.6);
+    box-shadow: 0 0 8px rgba(255, 200, 50, 0.25);
+}
+
+/* Domain Signal Tag */
+.tag-domain {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, rgba(58, 134, 255, 0.12), rgba(0, 210, 255, 0.08));
+    border: 1px solid rgba(58, 134, 255, 0.3);
+    color: #80b3ff;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 4px;
+    cursor: help;
+    transition: all 0.2s;
+}
+
+/* GitHub intel button */
+.intel-btn.gh:hover {
+    background: #24292e !important;
+    color: white !important;
+    border-color: #555 !important;
+}

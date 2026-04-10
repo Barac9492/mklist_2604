@@ -32,6 +32,7 @@ jobs:
     - name: Run Analyze Script
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        KIPRIS_API_KEY: ${{ secrets.KIPRIS_API_KEY }}
       run: python analyze_all.py
 
     - name: Commit and Push Changes
