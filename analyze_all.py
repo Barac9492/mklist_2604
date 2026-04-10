@@ -178,9 +178,6 @@ def detect_talent_signals(company, base_score):
     
     signals = []
     
-    if company.get('is_serial_founder'):
-        signals.append('연쇄창업가(다중법인 설립)')
-    
     # 1. Campus / Tech Hub
     hub_keywords = ['대학교', '산학협력단', '카이스트', 'kaist', '포스텍', '포항공대', 'unist', 'dgist', '팁스타운', '판교테크노밸리', '마루180', '마루360', '마곡', '홍릉', '연구소기업', '사내벤처', '기술지주']
     if any(k in address or k in biz for k in hub_keywords):
@@ -191,9 +188,9 @@ def detect_talent_signals(company, base_score):
     if any(k in biz for k in deeptech_keywords):
         signals.append('딥테크 고도기술')
         
-    # 3. Institutional Day-1 Seed
-    if capital >= 100 and base_score >= 30:
-        signals.append('Day-1 기관투자 가능성(고도자본)')
+    # 3. Institutional Day-1 Seed (Raised threshold to 500M KRW)
+    if capital >= 500 and base_score >= 25:
+        signals.append('초기 자본금 5억 이상 (기관/빌더 참여 가능성)')
         
     return signals
 
@@ -267,21 +264,10 @@ def main():
     all_weeks = []
     trend_data = []
 
-    # ── Pre-process to track CEOs for Serial Founder Detection ──
-    ceo_tracker = defaultdict(int)
-    raw_companies_by_week = []
-
     for filepath, period in weeks:
         companies = parse_xls(filepath)
-        for c in companies:
-            if len(c['ceo']) >= 2:
-                ceo_tracker[c['ceo']] += 1
-        raw_companies_by_week.append((period, filepath, companies))
-
-    for period, filepath, companies in raw_companies_by_week:
         startups = []
         for c in companies:
-            c['is_serial_founder'] = (len(c['ceo']) >= 2 and ceo_tracker[c['ceo']] > 1)
             score, cat, kws, signals = score_startup(c)
             if score >= 25:
                 c['score'] = score
@@ -385,7 +371,6 @@ def main():
                 'category': s['category'],
                 'score': score,
                 'investment_grade': grade,
-                'is_serial_founder': s.get('is_serial_founder', False),
                 'talent_signals': s.get('talent_signals', []),
                 'llm_tag': s.get('llm_tag', None)
             })

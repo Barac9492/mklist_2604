@@ -280,11 +280,6 @@ function renderTable() {
             const tooltipText = "사유: " + item.talent_signals.join(", ");
             eliteBadge = `<span class="badge-elite" title="${tooltipText}">🎖️ Elite</span>`;
         }
-        
-        let serialBadge = '';
-        if (item.is_serial_founder) {
-            serialBadge = `<span class="badge-serial" title="동일한 대표자가 복수의 법인을 설립함">🔄 Serial</span>`;
-        }
 
         const isStarred = item.name in watchlist;
         const safeName = item.name.replace(/'/g, "\\'");
@@ -325,7 +320,6 @@ function renderTable() {
                 <div class="name-wrapper">
                     <a href="https://www.google.com/search?q=${encodeURIComponent(item.name + ' 스타트업 홈페이지')}" target="_blank" class="rank-biz-name" title="Google 웹사이트 검색">${item.name}</a>
                     ${eliteBadge}
-                    ${serialBadge}
                     ${intelLinks}
                 </div>
                 ${crmControls}

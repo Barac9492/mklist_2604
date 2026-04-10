@@ -314,17 +314,6 @@ a.rank-biz-name:hover {
     vertical-align: middle;
 }
 
-.badge-serial {
-    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
-    color: #fff;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 10px;
-    font-weight: 800;
-    margin-left: 6px;
-    vertical-align: middle;
-}
-
 .tag-ai {
     display: inline-flex;
     align-items: center;
